@@ -1,5 +1,5 @@
 //блок с заботой о природе
-
+//заголовок
 .COMPANY_TEXT h2 {
     font-size: 38px;
     font-weight: 900;
@@ -13,25 +13,30 @@
     margin-right: auto;
 }
 
-.index-block--delimiter .tizers-list__items-wrapper.grid-list {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 32px;
-    max-width: 1015px;
-}
-
+//подзаголовки
 .tizers-list__item-name.switcher-title {
-    font-family: 'CeraKFC_Cyr-black';
+    font-family: 'KFC Condensed';
     font-size: 24px;
     font-weight: 900;
     line-height: 30px;
+    color: #000000;
 }
 
+//текст
 .tizers-list__item-descr.font_14 {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     text-align: start;
 }
+
+//расположение
+.index-block--delimiter .tizers-list__items-wrapper.grid-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 32px;
+    max-width: 1015px;
+}
+
 
 //тут были попытки поставить фон,
 //но пока не получилось.

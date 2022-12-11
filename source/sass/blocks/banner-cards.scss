@@ -1,0 +1,35 @@
+//карточки-наши достижения
+body .banners-img-with-text-list__item-text--absolute * {
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+
+    @media (max-width: 990px) {
+        font-size: 17.5px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .banners-img-with-text-list .grid-list--items-3 {
+        width: 1050px;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        justify-content: center;
+        // margin: 0 auto;
+    }
+}
+
+.banners-img-with-text-list .grid-list__item {
+    max-width: 335px;
+    min-height: 325px;
+}
+
+.banners-img-with-text-list .rounded-4 {
+    border-radius: 20px;
+}
+
+.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
+    padding-top: 100%;
+}
+

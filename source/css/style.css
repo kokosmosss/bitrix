@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "KFC";
+  src: url("../fonts/cerakfc-regular.woff2") format("woff2"), url("../fonts/cerakfc-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KFC";
+  src: url("../fonts/cerakfc-black.woff2") format("woff2"), url("../fonts/cerakfc-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KFC Condensed";
+  src: url("../fonts/cerakfc-condensed-regular.woff2") format("woff2"), url("../fonts/cerakfc-condensed-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KFC Condensed";
+  src: url("../fonts/cerakfc-condensed-black.woff2") format("woff2"), url("../fonts/cerakfc-condensed-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.body {
+  background-color: #F6F8FB;
+}
+
 body,
 h1,
 h2,
@@ -14,12 +46,9 @@ h6,
 .popup-window,
 body div.bx-yandex-map,
 .fancybox-title {
-  font-family: "CeraKFC-900", Arial, sans-serif;
+  font-family: "KFC", Arial, sans-serif;
   color: #000000;
-}
-
-header .header-menu__title {
-  color: #000000;
+  font-weight: 900;
 }
 
 @media (min-width: 992px) {
@@ -27,46 +56,44 @@ header .header-menu__title {
     padding-left: 187px;
   }
 }
-.banners-big .banners-big__top-text {
-  display: block;
+header .header-menu__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
-  font-size: 47px;
-  font-weight: 900;
-  line-height: 59px;
-  letter-spacing: -0.02em;
-  opacity: 1;
-}
-@media (max-width: 743px) {
-  .banners-big .banners-big__top-text {
-    font-size: 27px;
-    font-weight: 900;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-  }
 }
 
-.banners-big .banners-big__text-block {
-  color: #000000;
-  font-family: "CeraKFC-400";
+footer .footer__main-part .font_15 {
   font-weight: 400;
-  opacity: 1;
   font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.subscribe-block .subscribe-block__text .font_15 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer__bottom-part .footer__license {
+  font-family: "KFC Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
   line-height: 20px;
 }
 
 .banners-big__text--wide .banners-big__title {
   color: var(--theme-base-color);
   font-size: 135px;
-  font-weight: 900;
   line-height: 170px;
   letter-spacing: -0.04em;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .banners-big__text--wide .banners-big__title {
     font-size: 110px;
-    font-weight: 900;
     line-height: 105px;
-    letter-spacing: -0.04em;
     margin-bottom: 20px;
     width: 65%;
   }
@@ -74,9 +101,7 @@ header .header-menu__title {
 @media (max-width: 744px) {
   .banners-big__text--wide .banners-big__title {
     font-size: 74px;
-    font-weight: 900;
     line-height: 70px;
-    letter-spacing: -0.04em;
   }
 }
 @media (min-width: 1440px) {
@@ -85,28 +110,33 @@ header .header-menu__title {
   }
 }
 
-.banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
-  width: 614px;
+.banners-big .banners-big__top-text {
+  display: block;
+  color: #000000;
+  font-size: 47px;
+  line-height: 59px;
+  letter-spacing: -0.02em;
+  opacity: 1;
 }
-
-@media (min-width: 1100px) {
-  .banners-img-with-text-list .grid-list--items-3 {
-    width: 1050px;
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-    justify-content: center;
+@media (max-width: 743px) {
+  .banners-big .banners-big__top-text {
+    font-size: 27px;
+    line-height: 34px;
   }
 }
-.banners-img-with-text-list .grid-list__item {
-  max-width: 335px;
-  min-height: 325px;
+
+.banners-big .banners-big__text-block {
+  color: #000000;
+  font-weight: 400;
+  opacity: 1;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.banners-img-with-text-list .rounded-4 {
-  border-radius: 20px;
-}
-
-.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
-  padding-top: 100%;
+@media (min-width: 744px) {
+  .banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
+    width: 614px;
+  }
 }
 
 .banners-big__wrapper::before {
@@ -141,18 +171,38 @@ header .header-menu__title {
   width: 300px;
   height: 220px;
   top: -141px;
-  right: 550px;
+  left: calc(50% - 100px);
   z-index: 2;
   transform: rotate(-6deg);
+}
+
+.btn {
+  font-family: "KFC";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
 }
 
 .TIZERS .index-block.index-block--padding-top-80.index-block--padding-bottom-80 h2 {
   color: #000000;
   font-size: 60px;
-  font-weight: 900;
   line-height: 75px;
-  letter-spacing: 0em;
   text-align: center;
+}
+@media (max-width: 743px) {
+  .TIZERS .index-block.index-block--padding-top-80.index-block--padding-bottom-80 h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+.drag-block .tizers-list__item-descr {
+  color: #000000;
+  font-family: "KFC";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 @media (min-width: 1100px) {
@@ -168,20 +218,10 @@ header .header-menu__title {
 }
 
 .tizers-list__item-image-text {
-  font-family: "CeraKFC_Cyr-black";
+  font-family: "KFC Condensed";
   font-size: 40px;
   font-weight: 900;
   line-height: 50px;
-}
-
-.drag-block .tizers-list__item-descr {
-  color: #000000;
-  font-family: "CeraKFC_Cyr-400";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: center;
 }
 
 .COMPANY_TEXT h2 {
@@ -196,17 +236,12 @@ header .header-menu__title {
   margin-right: auto;
 }
 
-.index-block--delimiter .tizers-list__items-wrapper.grid-list {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 32px;
-  max-width: 1015px;
-}
-
 .tizers-list__item-name.switcher-title {
-  font-family: "CeraKFC_Cyr-black";
+  font-family: "KFC Condensed";
   font-size: 24px;
   font-weight: 900;
   line-height: 30px;
+  color: #000000;
 }
 
 .tizers-list__item-descr.font_14 {
@@ -216,15 +251,29 @@ header .header-menu__title {
   text-align: start;
 }
 
+.index-block--delimiter .tizers-list__items-wrapper.grid-list {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 32px;
+  max-width: 1015px;
+}
+
+.company-item:nth-child(2) {
+  background-color: #ffffff;
+}
+
 .company-item__heading .index-block__title {
   font-size: 38px;
-  font-weight: 900;
   line-height: 48px;
   color: #000000;
 }
+@media (max-width: 743px) {
+  .company-item__heading .index-block__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
 
 .company-item__text {
-  font-family: "CeraKFC-400";
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -232,7 +281,13 @@ header .header-menu__title {
   color: #000000;
 }
 
-.company-item__text .h4 {
+.company-item__text h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.company-item__text .main-item b {
+  font-family: "KFC Condensed";
   font-size: 20px;
   font-weight: 900;
   line-height: 25px;
@@ -254,32 +309,36 @@ header .header-menu__title {
   padding-bottom: 237px;
 }
 
-@font-face {
-  font-family: "CeraKFC-900";
-  src: url("../fonts/cerakfc-black.woff2") format("woff2"), url("../fonts/cerakfc-black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+body .banners-img-with-text-list__item-text--absolute * {
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
 }
-@font-face {
-  font-family: "CeraKFC_Cyr-black";
-  src: url("../fonts/cerakfc-condensed-black.woff2") format("woff2"), url("../fonts/cerakfc-condensed-black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+@media (max-width: 990px) {
+  body .banners-img-with-text-list__item-text--absolute * {
+    font-size: 17.5px;
+    line-height: 22px;
+  }
 }
-@font-face {
-  font-family: "CeraKFC_Cyr-reg";
-  src: url("../fonts/cerakfc-condensed-regular.woff2") format("woff2"), url("../fonts/cerakfc-condensed-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+
+@media (min-width: 1100px) {
+  .banners-img-with-text-list .grid-list--items-3 {
+    width: 1050px;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    justify-content: center;
+  }
 }
-@font-face {
-  font-family: "CeraKFC-400";
-  src: url("../fonts/cerakfc-regular.woff2") format("woff2"), url("../fonts/cerakfc-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.banners-img-with-text-list .grid-list__item {
+  max-width: 335px;
+  min-height: 325px;
+}
+
+.banners-img-with-text-list .rounded-4 {
+  border-radius: 20px;
+}
+
+.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
+  padding-top: 100%;
 }
 /*# sourceMappingURL=style.css.map */

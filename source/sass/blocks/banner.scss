@@ -1,50 +1,20 @@
-.banners-big .banners-big__top-text {
-    display: block;
-    color: #000000;
-    font-size: 47px;
-    font-weight: 900;
-    line-height: 59px;
-    letter-spacing: -0.02em;
-    opacity: 1;
-
-    @media (max-width: 743px) {
-        font-size: 27px;
-        font-weight: 900;
-        line-height: 34px;
-        letter-spacing: -0.02em;
-    }
-}
-
-.banners-big .banners-big__text-block {
-    color: #000000;
-    font-family: 'CeraKFC-400';
-    font-weight: 400;
-    opacity: 1;
-    font-size: 16px;
-    line-height: 20px;
-}
-
+//красный заголовок
 .banners-big__text--wide .banners-big__title {
     color: var(--theme-base-color);
     font-size: 135px;
-    font-weight: 900;
     line-height: 170px;
     letter-spacing: -0.04em;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1440px) {
         font-size: 110px;
-        font-weight: 900;
         line-height: 105px;
-        letter-spacing: -0.04em;
         margin-bottom: 20px;
         width: 65%;
     }
 
     @media (max-width: 744px) {
         font-size: 74px;
-        font-weight: 900;
         line-height: 70px;
-        letter-spacing: -0.04em;
     }
 
     @media (min-width: 1440px) {
@@ -52,32 +22,37 @@
     }
 }
 
-.banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
-    width: 614px;
-}
+//с кфс и ростикс
+.banners-big .banners-big__top-text {
+    display: block;
+    color: #000000;
+    font-size: 47px;
+    line-height: 59px;
+    letter-spacing: -0.02em;
+    opacity: 1;
 
-@media (min-width: 1100px) {
-    .banners-img-with-text-list .grid-list--items-3 {
-        width: 1050px;
-        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-        justify-content: center;
-        // margin: 0 auto;
+    @media (max-width: 743px) {
+        font-size: 27px;
+        line-height: 34px;
     }
 }
 
-.banners-img-with-text-list .grid-list__item {
-    max-width: 335px;
-    min-height: 325px;
+//маленький текст
+.banners-big .banners-big__text-block {
+    color: #000000;
+    font-weight: 400;
+    opacity: 1;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-.banners-img-with-text-list .rounded-4 {
-    border-radius: 20px;
+//ограничение для больших экранов маленького текста по ширине
+.banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
+    @media (min-width: 744px) {
+        width: 614px;
+    }
 }
-
-.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
-    padding-top: 100%;
-}
-
+//руки
 .banners-big__wrapper::before {
     content: "";
     position: absolute;
@@ -126,7 +101,7 @@
     width: 300px;
     height: 220px;
     top: -141px;
-    right: 550px;
+    left: calc(50% - 100px);
     z-index: 2;
     transform: rotate(-6deg);
 }

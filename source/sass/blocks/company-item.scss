@@ -1,27 +1,40 @@
 //блок волонтерство
+
+.company-item:nth-child(2) {
+    background-color: #ffffff;
+}
+//заголовок
 .company-item__heading .index-block__title {
     font-size: 38px;
-    font-weight: 900;
     line-height: 48px;
     color: #000000;
-}
 
+    @media (max-width: 743px) {
+    font-size: 32px;
+    line-height: 40px;
+    }
+}
+//текст
 .company-item__text {
-    font-family: 'CeraKFC-400';
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     color: #000000;
 }
+//итоги-заголовок
+.company-item__text h4 {
+    font-size: 20px;
+    line-height: 25px;
+}
 
-//не применяется, не могу перебить общие стили от h4
-.company-item__text .h4 {
+//таблица итогов
+.company-item__text .main-item b {
+    font-family: "KFC Condensed";
     font-size: 20px;
     font-weight: 900;
     line-height: 25px;
 }
-
 
 .company-item:first-child {
     border: none;
