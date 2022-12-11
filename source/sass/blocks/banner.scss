@@ -12,7 +12,7 @@
         width: 65%;
     }
 
-    @media (max-width: 744px) {
+    @media (max-width: 743px) {
         font-size: 74px;
         line-height: 70px;
     }
@@ -52,56 +52,31 @@
         width: 614px;
     }
 }
+
 //руки
-.banners-big__wrapper::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/hand-left.svg");
+.banners-big__item {
+    background-image: url("../img/hand-left.svg"), url("../img/hand-right.svg");
     background-repeat: no-repeat;
-    width: 234px;
-    height: 276px;
-    top: 180px;
-    left: 0;
-    z-index: 2;
+    background-size: 259px 329px, 175px 151px;
+    background-position: -20px 153px, right top 200px;
+
+    @media (max-width: 1440px) {
+
+    }
 }
-
-.banners-big__wrapper::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/hand-right.svg");
-    background-repeat: no-repeat;
-    width: 175px;
-    height: 118px;
-    top: 180px;
-    right: 0;
-    z-index: 2;
-}
-
-// @media (max-width: 1200px) {
-//     .banners-big__wrapper::after {
-//         background-size: 153px 103px;
-//     }
-
-//     .banners-big__wrapper::before {
-//         height: 241px;
-//         width: 152px;
-//     }
-
-// }
-
-// .banners-img-with-text-list  {
-//   position: relative;
-// }
 
 .banners-img-with-text-list::before {
     content: "";
     position: absolute;
     background-image: url("../img/hand-bottom.svg");
     background-repeat: no-repeat;
-    width: 300px;
+    width: 314px;
     height: 220px;
-    top: -141px;
-    left: calc(50% - 100px);
-    z-index: 2;
-    transform: rotate(-6deg);
+    top: -209px;
+    left: calc(50% - 117px);
 }
+//вот тут я убрала z-index,
+//потому что при адаптиве вылезал белый фон и перекрывал руку
+.swiper-container {
+    z-index: 0;
+ }
