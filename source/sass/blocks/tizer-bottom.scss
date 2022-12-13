@@ -5,12 +5,7 @@
     font-weight: 900;
     line-height: 48px;
     color: #000000;
-    padding-left: 187px;
-    margin-bottom: 70px;
-    position: relative;
-    //вот тут центрирование не работает
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 90px;
 }
 
 //подзаголовки
@@ -20,14 +15,7 @@
     font-weight: 900;
     line-height: 30px;
     color: #000000;
-}
-
-//текст
-.tizers-list__item-descr.font_14 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: start;
+    margin-bottom: 20px;
 }
 
 //расположение
@@ -37,6 +25,27 @@
     max-width: 1015px;
 }
 
+//иконки
+.TIZERS-BOTTOM .tizers-list__item-text-wrapper::before {
+    content:"";
+    width: 60px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.TIZERS-BOTTOM .tizers-list__item-wrapper:first-child .tizers-list__item-text-wrapper::before {
+    background-image: url("../img/icon1.svg");
+}
+
+.TIZERS-BOTTOM .tizers-list__item-wrapper:nth-child(2) .tizers-list__item-text-wrapper::before {
+    background-image: url("../img/icon2.svg");
+}
+
+.TIZERS-BOTTOM .tizers-list__item-wrapper:nth-child(3) .tizers-list__item-text-wrapper::before {
+    background-image: url("../img/icon3.svg");
+}
 
 //тут были попытки поставить фон,
 //но пока не получилось.

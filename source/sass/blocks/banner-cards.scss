@@ -11,6 +11,11 @@ body .banners-img-with-text-list__item-text--absolute * {
     }
 }
 
+.index-block .banners-img-with-text-list {
+    padding-top: 0;
+    padding-bottom: 118px;
+}
+
 @media (min-width: 1100px) {
     .banners-img-with-text-list .grid-list--items-3 {
         width: 1050px;

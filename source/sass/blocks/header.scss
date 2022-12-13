@@ -4,3 +4,21 @@ header .header-menu__title {
   line-height: 20px;
   color: #000000;
 }
+
+.header-cabinet .header-cabinet__link {
+  @media (min-width: 991px) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+#main .mobileheader--color-colored .logo .menu-light-icon-fill svg * {
+  fill: revert-layer;
+}
+
+#main .header-menu__item--more-items li:last-child a span {
+  color:#0057FF;
+  text-decoration: underline;
+}
