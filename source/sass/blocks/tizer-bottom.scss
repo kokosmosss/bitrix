@@ -1,0 +1,65 @@
+//блок с заботой о природе
+//заголовок
+.COMPANY_TEXT h2 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 48px;
+    color: #000000;
+    padding-left: 187px;
+    margin-bottom: 70px;
+    position: relative;
+    //вот тут центрирование не работает
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//подзаголовки
+.tizers-list__item-name.switcher-title {
+    font-family: 'KFC Condensed';
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #000000;
+}
+
+//текст
+.tizers-list__item-descr.font_14 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: start;
+}
+
+//расположение
+.index-block--delimiter .tizers-list__items-wrapper.grid-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 32px;
+    max-width: 1015px;
+}
+
+
+//тут были попытки поставить фон,
+//но пока не получилось.
+//не могу привязать его к нужному блоку и он не растягивается по ширине
+
+// .COMPANY_TEXT h2::before {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     margin-left: -200px;
+//     background-image: url("../img/paper-bg.png");
+
+// }
+
+// .index-block--delimiter::before {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 1050px;
+//     left:0;
+//     right: 0;
+//     background-image: url("../img/paper-bg.png");
+//     background-repeat: no-repeat;
+// }

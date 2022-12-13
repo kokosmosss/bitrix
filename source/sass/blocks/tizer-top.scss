@@ -1,0 +1,43 @@
+//блок наши достижения
+//красные числа
+.TIZERS .index-block.index-block--padding-top-80.index-block--padding-bottom-80 h2 {
+    color: #000000;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+
+    @media (max-width: 743px) {
+    font-size: 38px;
+    line-height: 48px;
+    }
+}
+
+//маленькие подписи
+.drag-block .tizers-list__item-descr {
+    color: #000000;
+    font-family: 'KFC';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+//расположение
+@media (min-width: 1100px) {
+    .tizers-list__items-wrapper.grid-list--items-3 {
+        max-width: 650px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.tizers-list__item--column {
+    align-items: center;
+}
+
+.tizers-list__item-image-text {
+    font-family: 'KFC Condensed';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 50px;
+}

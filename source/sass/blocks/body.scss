@@ -1,0 +1,33 @@
+.body {
+    background-color: #F6F8FB;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.popup-window,
+body div.bx-yandex-map,
+.fancybox-title {
+    font-family: 'KFC',
+        Arial,
+        sans-serif;
+    color: #000000;
+    font-weight: 900;
+}
+
+//выравнивание
+@media (min-width: 992px) {
+    body .maxwidth-theme:not(.pos-static) {
+        padding-left: 187px;
+    }
+}

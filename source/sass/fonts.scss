@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'KFC';
+    src:
+        url('../fonts/cerakfc-regular.woff2') format('woff2'),
+        url('../fonts/cerakfc-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KFC';
+    src:
+        url('../fonts/cerakfc-black.woff2') format('woff2'),
+        url('../fonts/cerakfc-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KFC Condensed';
+    src:
+        url('../fonts/cerakfc-condensed-regular.woff2') format('woff2'),
+        url('../fonts/cerakfc-condensed-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KFC Condensed';
+    src:
+        url('../fonts/cerakfc-condensed-black.woff2') format('woff2'),
+        url('../fonts/cerakfc-condensed-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
