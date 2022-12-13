@@ -9,10 +9,9 @@
         font-size: 110px;
         line-height: 105px;
         margin-bottom: 20px;
-        width: 65%;
     }
 
-    @media (max-width: 743px) {
+    @media (max-width: 767px) {
         font-size: 74px;
         line-height: 70px;
     }
@@ -31,7 +30,7 @@
     letter-spacing: -0.02em;
     opacity: 1;
 
-    @media (max-width: 743px) {
+    @media (max-width: 767px) {
         font-size: 27px;
         line-height: 34px;
     }
@@ -44,6 +43,10 @@
     opacity: 1;
     font-size: 16px;
     line-height: 20px;
+
+    @media (max-width: 990px) {
+        margin: 36px 0 95px;
+    }
 }
 
 //ограничение для больших экранов маленького текста по ширине
@@ -55,28 +58,37 @@
 
 //руки
 .banners-big__item {
-    background-image: url("../img/hand-left.svg"), url("../img/hand-right.svg");
+    background-image:
+        url("../img/hand-left.svg"),
+        url("../img/hand-right.svg"),
+        url("../img/hand-bottom.svg");
     background-repeat: no-repeat;
-    background-size: 259px 329px, 175px 151px;
-    background-position: -20px 153px, right top 200px;
+    background-size: 259px 329px, 175px 151px, 304px 300px;
+    background-position: -20px 172px, right top 141px, 54% 480px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 990px) {
+        background-size: 201px 285px, 138px 131px, 255px 315px;
+        background-position: -20px -3px, right top -41px, 54% 305px;
+    }
 
+    @media (min-width: 768px) and (max-width: 990px) {
+        background-position: -20px 82px, right -30px top 126px, 54% 381px;
+    }
+
+    @media (max-width: 580px) {
+        background-size: 131px 285px, 92px 131px, 221px 315px;
+        background-position: -20px 82px, right -30px top 126px, 54% 305px;
     }
 }
 
-.banners-img-with-text-list::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/hand-bottom.svg");
-    background-repeat: no-repeat;
-    width: 314px;
-    height: 220px;
-    top: -209px;
-    left: calc(50% - 117px);
-}
-//вот тут я убрала z-index,
-//потому что при адаптиве вылезал белый фон и перекрывал руку
 .swiper-container {
     z-index: 0;
- }
+}
+
+//вот здесь я не понимаю - сверху есть белая полоса, под которую все уезжает
+//я не нашла там картинки или z-index, при увеличении марджина, красный текст едет и перекрыватся этой пололсой
+.banners-big__wrapper {
+    @media (min-width: 581px) and (max-width: 990px) {
+        padding-top: 150px;
+    }
+}

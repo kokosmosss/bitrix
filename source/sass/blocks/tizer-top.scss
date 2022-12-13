@@ -20,7 +20,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    padding-left: 30px;
     margin-top: -8px;
 }
 
@@ -43,9 +42,16 @@
     font-size: 40px;
     font-weight: 900;
     line-height: 50px;
+}
+
+.TIZERS .tizers-list__item-image-text {
     padding-left: 30px;
 }
 
 .TIZERS .tizers-list .maxwidth-theme {
     padding-left: 0;
+}
+
+.TIZERS .tizers-list__item-descr {
+    padding-left: 30px;
 }

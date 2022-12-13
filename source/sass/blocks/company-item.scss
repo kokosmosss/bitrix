@@ -39,9 +39,9 @@
 .company-item:first-child {
     border: none;
     background-color: #EAEDF1;
-    background-image: url("../img/grey-bg-bottom.png");
-    background-repeat: no-repeat;
-    background-position: 100% 830px;
+    // background-image: url("../img/grey-bg-bottom.png");
+    // background-repeat: no-repeat;
+    // background-position: 100% 830px;
 }
 
 // url("../img/bg-top.png"),
@@ -51,4 +51,5 @@
 
 .index-block--padding-bottom-80 .company-item:first-child {
     padding-bottom: 237px;
+    padding-top: 171px;
 }
