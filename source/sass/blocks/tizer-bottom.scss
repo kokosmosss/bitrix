@@ -1,11 +1,95 @@
 //блок с заботой о природе
+// Название файла оставляю старое, чисто чтобы видно было хорошо что меняется
 //заголовок
-.COMPANY_TEXT h2 {
+.nature {
+    &:not(#id) {
+        padding-top: 124px;
+        padding-bottom: 162px;
+    }
+
+    background-color: #C39E67;
+    background-repeat:
+        repeat-x,
+        repeat-x,
+        no-repeat,
+        no-repeat,
+        repeat;
+    background-position:
+        50% 0,
+        50% 100%,
+        50% 0,
+        calc(50% + 656px) -84px,
+        50% 50%;
+    background-image:
+        url('../img/tear-top.svg'),
+        url('../img/tear-bottom.png'),
+        url('../img/trash.svg'),
+        url('../img/basket.png'),
+        url('../img/kiwihug.png');
+
+    @media (max-width: 992px) {
+        padding-right: 80px;
+        padding-left: 80px;
+
+        &:not(#id) {
+            padding-bottom: 735px;
+        }
+
+        background-position:
+            50% 0,
+            50% 100%,
+            calc(50% + 260px) 0,
+            50% 100%,
+            50% 50%;
+        background-image:
+            url('../img/tear-top.svg'),
+            url('../img/tear-bottom.png'),
+            url('../img/trash.svg'),
+            url('../img/basket-medium.png'),
+            url('../img/kiwihug.png');
+    }
+
+    @media (max-width: 690px) {
+        padding-right: 0;
+        padding-left: 0;
+
+        &:not(#id) {
+            padding-top: 116px;
+            padding-bottom: 610px;
+        }
+
+        background-position:
+            50% 0,
+            50% 100%,
+            calc(50% + 120px) 0,
+            50% calc(100% - 40px),
+            50% 50%;
+        background-image:
+            url('../img/tear-top-mobile.svg'),
+            url('../img/tear-bottom-mobile.png'),
+            url('../img/trash-mobile.svg'),
+            url('../img/basket-mobile.png'),
+            url('../img/kiwihug.png');
+    }
+}
+
+.nature h2 {
     font-size: 38px;
     font-weight: 900;
     line-height: 48px;
     color: #000000;
-    margin-bottom: 90px;
+    margin-right: calc(50% + 80px);
+    margin-bottom: 65px;
+
+    @media (max-width: 992px) {
+        margin-right: 80px;
+    }
+
+    @media (max-width: 690px) {
+        margin-right: 160px;
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 //подзаголовки
@@ -20,13 +104,37 @@
 
 //расположение
 .index-block--delimiter .tizers-list__items-wrapper.grid-list {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 32px;
-    max-width: 1015px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+    padding-right: 34px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: 300px;
+        gap: 50px;
+        padding-right: 0;
+    }
+
+    @media (max-width: 690px) {
+        grid-template-columns: 1fr;
+
+        // вот это все убирает последствия скролла
+        &:not(#id) {
+            display: grid;
+            gap: 35px;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: visible;
+
+            > div {
+                width: auto;
+                padding: 0;
+            }
+        }
+    }
 }
 
 //иконки
-.TIZERS-BOTTOM .tizers-list__item-text-wrapper::before {
+.nature .tizers-list__item-text-wrapper::before {
     content:"";
     width: 60px;
     height: 62px;
@@ -35,40 +143,14 @@
     margin-bottom: 25px;
 }
 
-.TIZERS-BOTTOM .tizers-list__item-wrapper:first-child .tizers-list__item-text-wrapper::before {
+.nature .tizers-list__item-wrapper:first-child .tizers-list__item-text-wrapper::before {
     background-image: url("../img/icon1.svg");
 }
 
-.TIZERS-BOTTOM .tizers-list__item-wrapper:nth-child(2) .tizers-list__item-text-wrapper::before {
+.nature .tizers-list__item-wrapper:nth-child(2) .tizers-list__item-text-wrapper::before {
     background-image: url("../img/icon2.svg");
 }
 
-.TIZERS-BOTTOM .tizers-list__item-wrapper:nth-child(3) .tizers-list__item-text-wrapper::before {
+.nature .tizers-list__item-wrapper:nth-child(3) .tizers-list__item-text-wrapper::before {
     background-image: url("../img/icon3.svg");
 }
-
-//тут были попытки поставить фон,
-//но пока не получилось.
-//не могу привязать его к нужному блоку и он не растягивается по ширине
-
-// .COMPANY_TEXT h2::before {
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     margin-left: -200px;
-//     background-image: url("../img/paper-bg.png");
-
-// }
-
-// .index-block--delimiter::before {
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 1050px;
-//     left:0;
-//     right: 0;
-//     background-image: url("../img/paper-bg.png");
-//     background-repeat: no-repeat;
-// }
