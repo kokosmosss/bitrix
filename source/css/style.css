@@ -252,13 +252,24 @@ footer .footer__main-part .font_15 {
 }
 
 @media (min-width: 1100px) {
-  .tizers-list__items-wrapper.grid-list--items-3 {
+  .tizers-list__items-wrapper.grid-list--items-3:not(#id) {
     max-width: 650px;
     grid-template-columns: repeat(3, minmax(219px, 1fr));
     justify-content: center;
     margin: 0 auto;
   }
 }
+@media (max-width: 1099px) {
+  .tizers-list__items-wrapper.grid-list--items-3:not(#id) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 690px) {
+  .tizers-list__items-wrapper.grid-list--items-3:not(#id) {
+    grid-template-columns: 1fr;
+  }
+}
+
 .tizers-list__item--column {
   align-items: center;
 }
@@ -280,6 +291,70 @@ footer .footer__main-part .font_15 {
 
 .TIZERS .tizers-list__item-descr {
   padding-left: 30px;
+}
+
+.TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
+  padding-top: 118px;
+  padding-bottom: 85px;
+}
+@media (max-width: 1370px) {
+  .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
+    padding-bottom: 348px;
+  }
+}
+@media (max-width: 690px) {
+  .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
+    padding-bottom: 313px;
+  }
+}
+
+.TIZERS .index-block {
+  position: relative;
+}
+
+.TIZERS .index-block::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/boy.svg");
+  background-repeat: no-repeat;
+  width: 392px;
+  height: 484px;
+  right: 0;
+  bottom: calc(50% - 277px);
+}
+@media (max-width: 1370px) {
+  .TIZERS .index-block::before {
+    width: 392px;
+    height: 484px;
+    bottom: calc(-50% + 277px);
+    right: calc(50% - 196px);
+  }
+}
+@media (max-width: 690px) {
+  .TIZERS .index-block::before {
+    width: 377px;
+    height: 404px;
+    bottom: calc(-50% + 382px);
+    right: calc(50% - 210px);
+    background-size: 316px 399px;
+  }
+}
+
+@media (max-width: 690px) {
+  .TIZERS .mobile-scrolled.mobile-scrolled--items-2 {
+    grid-template-columns: 1fr;
+  }
+  .TIZERS .mobile-scrolled.mobile-scrolled--items-2:not(#id) {
+    display: grid;
+    gap: 35px;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible;
+  }
+  .TIZERS .mobile-scrolled.mobile-scrolled--items-2:not(#id) > div {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .nature {
@@ -471,8 +546,7 @@ footer .footer__main-part .font_15 {
 }
 
 .index-block .banners-img-with-text-list {
-  padding-top: 0;
-  padding-bottom: 118px;
+  padding: 0;
 }
 
 @media (min-width: 744px) {
