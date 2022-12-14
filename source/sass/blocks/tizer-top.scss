@@ -8,8 +8,8 @@
     margin-bottom: 8px;
 
     @media (max-width: 743px) {
-    font-size: 38px;
-    line-height: 48px;
+        font-size: 38px;
+        line-height: 48px;
     }
 }
 
@@ -24,12 +24,27 @@
 }
 
 //расположение
-@media (min-width: 1100px) {
-    .tizers-list__items-wrapper.grid-list--items-3 {
-        max-width: 650px;
-        grid-template-columns: repeat(3, minmax(219px, 1fr));
-        justify-content: center;
-        margin: 0 auto;
+.tizers-list__items-wrapper.grid-list--items-3 {
+    &:not(#id) {
+
+        @media (min-width: 1100px) {
+            max-width: 650px;
+            // я видела твой комментарий по поводу гридов, но если делать равными - переносит числа
+            grid-template-columns: repeat(3, minmax(219px, 1fr));
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1099px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            // и вот тут не встает в одну строку, как по макету должно быть
+            // margin-right: -55px;
+            // margin-left: -55px;
+        }
+
+        @media (max-width: 690px) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -54,4 +69,68 @@
 
 .TIZERS .tizers-list__item-descr {
     padding-left: 30px;
+}
+
+.TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
+    padding-top: 118px;
+    padding-bottom: 85px;
+
+    @media (max-width: 1370px) {
+        padding-bottom: 348px;
+    }
+
+    @media (max-width: 690px) {
+        padding-bottom: 313px;
+    }
+}
+
+.TIZERS .index-block {
+    position: relative;
+}
+
+//мальчик
+.TIZERS .index-block::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/boy.svg');
+    background-repeat: no-repeat;
+    width: 392px;
+    height: 484px;
+    right: 0;
+    bottom: calc(50% - 277px);
+
+    // поставила как если бы было в одну строку
+    @media (max-width: 1370px) {
+        width: 392px;
+        height: 484px;
+        bottom: calc(-50% + 277px);
+        right: calc(50% - 196px);
+    }
+
+    @media (max-width: 690px) {
+        width: 377px;
+        height: 404px;
+        bottom: calc(-50% + 382px);
+        right: calc(50% - 210px);
+        background-size: 316px 399px;
+    }
+}
+
+.TIZERS .mobile-scrolled.mobile-scrolled--items-2 {
+    @media (max-width: 690px) {
+        grid-template-columns: 1fr;
+
+        &:not(#id) {
+            display: grid;
+            gap: 35px;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: visible;
+
+            >div {
+                width: auto;
+                padding: 0;
+            }
+        }
+    }
 }
