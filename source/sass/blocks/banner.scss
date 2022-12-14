@@ -19,6 +19,10 @@
     @media (min-width: 1440px) {
         width: 1000px;
     }
+
+    @media (min-width: 581px) and (max-width: 990px) {
+        width: 78%;
+    }
 }
 
 //с кфс и ростикс
@@ -49,6 +53,10 @@
     }
 }
 
+.banners-big--adaptive-1 .banners-big__text-block {
+    display: block;
+}
+
 //ограничение для больших экранов маленького текста по ширине
 .banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
     @media (min-width: 744px) {
@@ -57,7 +65,7 @@
 }
 
 //руки
-.banners-big__item {
+.banners-big__wrapper {
     background-image:
         url("../img/hand-left.svg"),
         url("../img/hand-right.svg"),
@@ -66,18 +74,22 @@
     background-size: 259px 329px, 175px 151px, 304px 300px;
     background-position: -20px 172px, right top 141px, 54% 480px;
 
-    @media (max-width: 990px) {
+    @media (min-width: 581px) and (max-width: 990px) {
         background-size: 201px 285px, 138px 131px, 255px 315px;
-        background-position: -20px -3px, right top -41px, 54% 305px;
-    }
-
-    @media (min-width: 768px) and (max-width: 990px) {
-        background-position: -20px 82px, right -30px top 126px, 54% 381px;
+        background-position: -20px 117px,
+            right top 36px,
+            54% 533px;
     }
 
     @media (max-width: 580px) {
         background-size: 131px 285px, 92px 131px, 221px 315px;
-        background-position: -20px 82px, right -30px top 126px, 54% 305px;
+        background-position: -20px 29px,
+            right -30px top 79px,
+            54% 391px;
+    }
+
+    @media (min-width: 581px) and (max-width: 990px) {
+        padding-top: 150px;
     }
 }
 
@@ -85,10 +97,10 @@
     z-index: 0;
 }
 
-//вот здесь я не понимаю - сверху есть белая полоса, под которую все уезжает
-//я не нашла там картинки или z-index, при увеличении марджина, красный текст едет и перекрыватся этой пололсой
-.banners-big__wrapper {
-    @media (min-width: 581px) and (max-width: 990px) {
-        padding-top: 150px;
-    }
+.banners-big .maxwidth-banner {
+    margin-top: 20px;
+}
+
+.banners-big--normal .banners-big__depend-height {
+    height: 580px;
 }

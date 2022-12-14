@@ -1,5 +1,5 @@
 //карточки-наши достижения
-body .banners-img-with-text-list__item-text--absolute * {
+.banners-img-with-text-list__item-title a {
     font-size: 26px;
     line-height: 33px;
     text-align: center;
@@ -9,6 +9,16 @@ body .banners-img-with-text-list__item-text--absolute * {
         font-size: 17.5px;
         line-height: 22px;
     }
+
+    @media (max-width: 690px) {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 33px;
+    }
+}
+
+.banners-img-with-text-list__wrapper:nth-child(3) .banners-img-with-text-list__item-title a {
+    color: #FFFFFF;
 }
 
 .index-block .banners-img-with-text-list {
@@ -16,25 +26,81 @@ body .banners-img-with-text-list__item-text--absolute * {
     padding-bottom: 118px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 744px) {
     .banners-img-with-text-list .grid-list--items-3 {
-        width: 1050px;
-        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-        justify-content: center;
-        // margin: 0 auto;
+        &:not(#id) {
+            max-width: 1050px;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+        }
     }
 }
 
 .banners-img-with-text-list .grid-list__item {
     max-width: 335px;
-    min-height: 325px;
+    min-width: 225px;
+}
+
+.banners-img-with-text-list__item-image {
+    @media (min-width: 747px) {
+        min-height: 218px;
+    }
+
+    @media (min-width: 991px) {
+        min-height: 218px;
+    }
+}
+
+.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
+    @media (max-width: 690px) {
+        padding-top: 34%;
+    }
+
+    @media (min-width: 991px) {
+        padding-top: 100%;
+    }
 }
 
 .banners-img-with-text-list .rounded-4 {
     border-radius: 20px;
 }
 
-.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
-    padding-top: 100%;
+.banners-img-with-text-list__wrapper .dark-block-after:after {
+    background: none;
+}
+
+.banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
+    background: linear-gradient(1.94deg, #FFFFFF 1.87%, rgba(255, 255, 255, 0) 98.61%);
+}
+
+.banners-img-with-text-list__item-text {
+    padding: 18px 16px 0;
+}
+
+.elements-count-3 .banners-img-with-text-list__item-text--absolute {
+    bottom: 19px;
+
+    @media (max-width: 690px) {
+        bottom: 40px;
+    }
+}
+
+.MIDDLE_ADV .mobile-scrolled.mobile-scrolled--items-2 {
+    @media (max-width: 690px) {
+        grid-template-columns: 1fr;
+
+        &:not(#id) {
+            display: grid;
+            gap: 35px;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: visible;
+
+            >div {
+                width: auto;
+                padding: 0;
+            }
+        }
+    }
 }
 
