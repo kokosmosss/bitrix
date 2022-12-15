@@ -495,110 +495,6 @@ footer .footer__main-part .font_15 {
   background-image: url("../img/icon3.svg");
 }
 
-.company-item:nth-child(2) {
-  background-color: #ffffff;
-}
-
-.company-item__heading .index-block__title {
-  font-size: 38px;
-  line-height: 48px;
-  color: #000000;
-}
-@media (max-width: 743px) {
-  .company-item__heading .index-block__title {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
-.company-item__text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #000000;
-}
-
-.company-item__text h4 {
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.company-item__text .main-item b {
-  font-family: "KFC Condensed";
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 25px;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.main-item-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px 10px;
-}
-
-.main-item {
-  width: auto;
-}
-
-.company-item:first-child {
-  border: none;
-  background-color: #EAEDF1;
-}
-
-.index-block--delimiter > div {
-  border: none;
-}
-
-.index-block--padding-bottom-80 .company-item:first-child {
-  padding-bottom: 97px;
-  padding-top: 120px;
-  background-image: url("../img/hand-trash-vol.svg"), url("../img/hand-bike-vol.svg");
-  background-repeat: no-repeat;
-  background-position: left top, calc(50% - 75px) 598px;
-}
-@media (max-width: 990px) {
-  .index-block--padding-bottom-80 .company-item:first-child {
-    background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
-    background-position: calc(50% - 286px) 1182px, right -80px top 47px;
-  }
-}
-@media (max-width: 690px) {
-  .index-block--padding-bottom-80 .company-item:first-child {
-    background-image: none;
-  }
-}
-
-.company-item__picture--static {
-  max-height: 611px;
-  border-radius: 20px;
-}
-
-@media (max-width: 991px) {
-  #main .company-item__picture-wrapper {
-    padding-top: 96%;
-  }
-}
-
-.company-item__tizers {
-  margin-top: 0;
-}
-
-.index-block__preview {
-  margin-top: 48px;
-}
-
-.index-block .index-block__btn--subscribe {
-  margin: 70px auto 0;
-  max-width: 300px;
-}
-
-.index-block .index-block__btn--subscribe .btn {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .banners-img-with-text-list__item-title a {
   font-size: 26px;
   line-height: 33px;
@@ -743,6 +639,137 @@ footer .footer__main-part .font_15 {
   .MIDDLE_ADV .mobile-scrolled.mobile-scrolled--items-2:not(#id) > div {
     width: 100%;
     padding: 0;
+  }
+}
+
+.company-item__heading .index-block__title {
+  font-size: 38px;
+  line-height: 48px;
+  color: #000000;
+}
+@media (max-width: 743px) {
+  .company-item__heading .index-block__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.company-item__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+}
+
+.company-item__text h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.company-item__text .main-item b {
+  font-family: "KFC Condensed";
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 10px;
+}
+
+.main-item {
+  width: auto;
+}
+
+.company-item:first-child {
+  border: none;
+  background-color: #EAEDF1;
+}
+
+.index-block--delimiter > div {
+  border: none;
+}
+
+.index-block--padding-bottom-80 .company-item:first-child {
+  padding-bottom: 97px;
+  padding-top: 120px;
+  background-image: url("../img/hand-trash-vol.svg"), url("../img/hand-bike-vol.svg");
+  background-repeat: no-repeat;
+  background-position: left top, calc(50% - 75px) 598px;
+}
+@media (max-width: 990px) {
+  .index-block--padding-bottom-80 .company-item:first-child {
+    background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
+    background-position: calc(50% - 286px) 1182px, right -80px top 47px;
+  }
+}
+@media (max-width: 690px) {
+  .index-block--padding-bottom-80 .company-item:first-child {
+    background-image: none;
+  }
+}
+
+.company-item__picture--static {
+  max-height: 611px;
+  border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  #main .company-item__picture-wrapper {
+    padding-top: 96%;
+  }
+}
+
+.company-item__tizers {
+  margin-top: 0;
+}
+
+.index-block__preview {
+  margin-top: 48px;
+}
+
+.index-block .index-block__btn--subscribe {
+  margin: 70px auto 0;
+  max-width: 300px;
+}
+
+.index-block .index-block__btn--subscribe .btn {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.company-item:nth-child(2) {
+  background-color: #ffffff;
+  background-image: url("../img/hand-guitar-char.svg"), url("../img/hand-ball-char.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 250px) top, right bottom 60px;
+}
+@media (max-width: 990px) {
+  .company-item:nth-child(2) {
+    padding-bottom: 200px;
+    background-image: url("../img/hand-guitar-char-mobile.svg"), url("../img/hand-ball-char.svg");
+    background-position: left top 300px, right bottom 40px;
+  }
+}
+@media (max-width: 690px) {
+  .company-item:nth-child(2) {
+    background-image: none;
+    padding-bottom: 40px;
+  }
+}
+
+.index-block__btn-wrapper {
+  display: grid;
+  grid-template-columns: 196px 247px;
+  column-gap: 30px;
+}
+@media (max-width: 690px) {
+  .index-block__btn-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

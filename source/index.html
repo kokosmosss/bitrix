@@ -1017,13 +1017,23 @@
                         <div class="sticky-block flexbox--mb20-t991">
                           <h3 class="index-block__title switcher-title">Благотворительность</h3>
                           <div class="company-item__text  index-block__preview">
+                            <!--  фразу обернула в тег b -->
                             <p>
-                              Работа с подопечными фонда «Открывая горизонты» — одно из ключевых направлений волонтерской помощи KFC. Это помощь подросткам из детских домов в социализации и профориентации в таком важном периоде, как подготовка к будущей самостоятельной жизни. Поддержать работу фонда легко — через онлайн пожертвование по кнопке ниже. А чтобы стать волонтером фонда, заполни анкету на на сайте&nbsp;«Открывая горизонты».
+                              Работа с подопечными фонда «Открывая горизонты» — одно из ключевых направлений волонтерской помощи KFC. Это помощь подросткам из детских домов в социализации и профориентации в таком важном периоде, как подготовка к будущей самостоятельной жизни. <b>Поддержать работу фонда легко — через онлайн пожертвование по кнопке ниже.</b> А чтобы стать волонтером фонда, заполни анкету на на сайте&nbsp;«Открывая горизонты».
                             </p>
                           </div>
-                          <div class="index-block__btn">
-                            <a href="/#" class="btn btn-transparent-border btn-lg">
-                            Узнать больше не сайте фонда					</a>
+                          <div class = "index-block__btn-wrapper">
+                            <div class="index-block__btn">
+                              <!-- удалила у кнопки классы btn btn-transparent-border btn-lg, добавила button-link -->
+                              <a href="/#" class="button-link">
+                                Сделать пожертвование</a>
+                            </div>
+
+                            <div class="index-block__btn">
+                              <!-- удалила у кнопки классы btn btn-transparent-border btn-lg, добавила button-link -->
+                              <a href="/#" class="button-link">
+                                Узнать больше на сайте фонда </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1038,6 +1048,11 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <!-- добавила новую кнопку с модификатором для обертки index-block__btn--subscribe-->
+                <div class="index-block__btn index-block__btn--subscribe">
+                  <a href="/#" class="btn btn-default">
+                    Подпишись на рассылку</a>
                 </div>
               </div>
               <div class="tizers-list tizers-list--narrow nature">
