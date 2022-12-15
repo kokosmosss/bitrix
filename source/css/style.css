@@ -545,6 +545,7 @@ footer .footer__main-part .font_15 {
 .company-item:first-child {
   border: none;
   background-color: #EAEDF1;
+  overflow: hidden;
 }
 
 .index-block--delimiter > div {
@@ -561,7 +562,7 @@ footer .footer__main-part .font_15 {
 @media (max-width: 990px) {
   .index-block--padding-bottom-80 .company-item:first-child {
     background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
-    background-position: calc(50% - 286px) 1182px, right -80px top 47px;
+    background-position: calc(50% - 286px) 1233px, right -80px top 47px;
   }
 }
 @media (max-width: 690px) {
@@ -573,6 +574,16 @@ footer .footer__main-part .font_15 {
 .company-item__picture--static {
   max-height: 611px;
   border-radius: 20px;
+}
+
+.company-item:first-child .company-item__picture--static {
+  margin-right: -100%;
+}
+@media (max-width: 991px) {
+  .company-item:first-child .company-item__picture--static {
+    margin-right: -100px;
+    margin-left: -100px;
+  }
 }
 
 @media (max-width: 991px) {

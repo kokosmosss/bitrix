@@ -38,6 +38,7 @@
     display: block;
     margin-bottom: 10px;
 }
+
 //добавила одну обертку в разметку
 .main-item-container {
     display: grid;
@@ -52,12 +53,14 @@
 .company-item:first-child {
     border: none;
     background-color: #EAEDF1;
+    overflow: hidden;
 }
 
 // url("../img/bg-top.png"),
 .index-block--delimiter>div {
     border: none;
 }
+
 //руки
 .index-block--padding-bottom-80 .company-item:first-child {
     padding-bottom: 97px;
@@ -76,18 +79,30 @@
             url('../img/hand-bike-vol.svg');
 
         background-position:
-            calc(50% - 286px) 1182px,
+            calc(50% - 286px) 1233px,
             right -80px top 47px;
     }
 
-        @media (max-width: 690px) {
-            background-image: none;
-        }
+    @media (max-width: 690px) {
+        background-image: none;
+    }
 }
+
 //большая картинка
 .company-item__picture--static {
     max-height: 611px;
     border-radius: 20px;
+}
+//вот так, но фотка обрезается
+//как масштабировать, чтобы не обрезало ее? может она как бы назад отодвинутся?
+//и на мобиле выглядит не так как надо - вплотную встает к краям
+.company-item:first-child .company-item__picture--static {
+    margin-right: -100%;
+
+    @media (max-width: 991px) {
+        margin-right: -100px;
+        margin-left: -100px;
+    }
 }
 
 #main .company-item__picture-wrapper {
@@ -104,21 +119,7 @@
     margin-top: 48px;
 }
 
-//это были попытки прижать картинку к правому боку
-//.flexbox.flexbox--direction-row {
-//     width: 100vw;
-// }
-
-// .COMPANY_TEXT {
-//     overflow: hidden;
-// }
-
-// .flex-1 {
-//     flex: 0;
-// }
-
 //кнопка
-
 .index-block .index-block__btn--subscribe {
     margin: 70px auto 0;
     max-width: 300px;
