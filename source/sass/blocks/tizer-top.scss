@@ -7,7 +7,7 @@
     text-align: center;
     margin-bottom: 8px;
 
-    @media (max-width: 743px) {
+    @media (max-width: 690px) {
         font-size: 38px;
         line-height: 48px;
     }
@@ -26,25 +26,31 @@
 //расположение
 .tizers-list__items-wrapper.grid-list--items-3 {
     &:not(#id) {
+        max-width: 720px;
+        grid-template-columns: repeat(3, 220px);
+        gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
 
-        @media (min-width: 1100px) {
-            max-width: 650px;
-            // я видела твой комментарий по поводу гридов, но если делать равными - переносит числа
-            grid-template-columns: repeat(3, minmax(219px, 1fr));
-            justify-content: center;
-            margin: 0 auto;
-        }
-
-        @media (max-width: 1099px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            // и вот тут не встает в одну строку, как по макету должно быть
-            // margin-right: -55px;
-            // margin-left: -55px;
+        @media (max-width: 992px) {
+            gap: 22px;
+            margin-right: -60px;
+            margin-left: -60px;
         }
 
         @media (max-width: 690px) {
             grid-template-columns: 1fr;
+            gap: 50px;
         }
+    }
+}
+
+.TIZERS .tizers-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: 690px) {
+        padding-top: 48px;
     }
 }
 
@@ -59,23 +65,11 @@
     line-height: 50px;
 }
 
-.TIZERS .tizers-list__item-image-text {
-    padding-left: 30px;
-}
-
-.TIZERS .tizers-list .maxwidth-theme {
-    padding-left: 0;
-}
-
-.TIZERS .tizers-list__item-descr {
-    padding-left: 30px;
-}
-
 .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
     padding-top: 118px;
     padding-bottom: 85px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: 992px) {
         padding-bottom: 348px;
     }
 
@@ -96,24 +90,37 @@
     background-repeat: no-repeat;
     width: 392px;
     height: 484px;
-    right: 0;
-    bottom: calc(50% - 277px);
+    left: calc(50% + 330px);
+    bottom: calc(50% - 265px);
 
-    // поставила как если бы было в одну строку
-    @media (max-width: 1370px) {
+    @media (max-width: 992px) {
         width: 392px;
         height: 484px;
-        bottom: calc(-50% + 277px);
+        left: auto;
+        bottom: calc(-50% + 387px);
         right: calc(50% - 196px);
     }
 
     @media (max-width: 690px) {
         width: 377px;
         height: 404px;
-        bottom: calc(-50% + 382px);
+        bottom: calc(-50% + 462px);
         right: calc(50% - 210px);
         background-size: 316px 399px;
     }
+}
+
+.TIZERS .index-block::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 56px;
+
+    background-position: 50% 100%;
+    background-image: url('../img/tear-boy.png')
 }
 
 .TIZERS .mobile-scrolled.mobile-scrolled--items-2 {
@@ -122,7 +129,6 @@
 
         &:not(#id) {
             display: grid;
-            gap: 35px;
             margin: 0 !important;
             padding: 0 !important;
             overflow: visible;

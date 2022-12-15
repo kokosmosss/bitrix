@@ -19,15 +19,27 @@
 
 .banners-img-with-text-list__wrapper:nth-child(3) .banners-img-with-text-list__item-title a {
     color: #FFFFFF;
+
+    @media (max-width: 690px) {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.banners-img-with-text-list__wrapper:nth-child(1) .banners-img-with-text-list__item-title a {
+    @media (max-width: 690px) {
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .index-block .banners-img-with-text-list {
     padding: 0;
-    
 }
 
-@media (min-width: 744px) {
-    .banners-img-with-text-list .grid-list--items-3 {
+.banners-img-with-text-list .grid-list--items-3 {
+    justify-items: center;
+
+    @media (min-width: 744px) {
         &:not(#id) {
             max-width: 1050px;
             grid-template-columns: 1fr 1fr 1fr;
@@ -37,6 +49,7 @@
 }
 
 .banners-img-with-text-list .grid-list__item {
+    width: 100%;
     max-width: 335px;
     min-width: 225px;
 }
@@ -63,6 +76,7 @@
 
 .banners-img-with-text-list .rounded-4 {
     border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 }
 
 .banners-img-with-text-list__wrapper .dark-block-after:after {
@@ -70,7 +84,32 @@
 }
 
 .banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
-    background: linear-gradient(1.94deg, #FFFFFF 1.87%, rgba(255, 255, 255, 0) 98.61%);
+    background-image: linear-gradient(to top, #FFFFFF 1.87%, rgba(255, 255, 255, 0) 98.61%);
+}
+
+.banners-img-with-text-list__wrapper .dark-block-after:after {
+    @media (max-width: 690px) {
+        top: 0;
+        bottom: -30px;
+    }
+}
+
+.banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
+    @media (max-width: 690px) {
+        background-image: linear-gradient(to top, #000000 1.87%, rgba(255, 255, 255, 0) 98.61%);
+    }
+}
+
+.banners-img-with-text-list__wrapper:nth-child(2) .dark-block-after:after {
+    @media (max-width: 690px) {
+        background-image: linear-gradient(to top, #FFFFFF 1.87%, rgba(255, 255, 255, 0) 98.61%);
+    }
+}
+
+.banners-img-with-text-list__wrapper:nth-child(3) .dark-block-after:after {
+    @media (max-width: 690px) {
+        background-image: linear-gradient(to top, #C5A56C 0.4%, rgba(197, 165, 108, 0) 100.17%);
+    }
 }
 
 .banners-img-with-text-list__item-text {
@@ -97,7 +136,7 @@
             overflow: visible;
 
             >div {
-                width: auto;
+                width: 100%;
                 padding: 0;
             }
         }
