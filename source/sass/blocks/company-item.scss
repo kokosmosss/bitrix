@@ -42,12 +42,17 @@
 //добавила одну обертку в разметку
 .main-item-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 10px;
+    grid-template-columns: 138px 226px;
+    column-gap: 40px;
+
+    @media (max-width: 580px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .main-item {
     width: auto;
+    margin-right: 0;
 }
 
 .company-item:first-child {
@@ -56,7 +61,6 @@
     overflow: hidden;
 }
 
-// url("../img/bg-top.png"),
 .index-block--delimiter>div {
     border: none;
 }
@@ -71,15 +75,15 @@
     background-repeat: no-repeat;
     background-position:
         left top,
-        calc(50% - 75px) 598px;
+        calc(50% - 48px) 598px;
 
-    @media (max-width: 990px) {
+    @media (max-width: 992px) {
         background-image:
             url('../img/hand-trash-vol-mobile.svg'),
             url('../img/hand-bike-vol.svg');
 
         background-position:
-            calc(50% - 286px) 1233px,
+            calc(50% - 286px) 1203px,
             right -80px top 47px;
     }
 
@@ -93,21 +97,33 @@
     max-height: 611px;
     border-radius: 20px;
 }
-//вот так, но фотка обрезается
-//как масштабировать, чтобы не обрезало ее? может она как бы назад отодвинутся?
-//и на мобиле выглядит не так как надо - вплотную встает к краям
-.company-item:first-child .company-item__picture--static {
-    margin-right: -100%;
 
-    @media (max-width: 991px) {
+.company-item:first-child .company-item__picture--static {
+    margin-right: -200px;
+
+    @media (max-width: 992px) {
         margin-right: -100px;
         margin-left: -100px;
+    }
+
+    @media (max-width: 690px) {
+        margin: 0;
     }
 }
 
 #main .company-item__picture-wrapper {
-    @media (max-width: 991px) {
+    @media (max-width: 992px) {
         padding-top: 96%;
+    }
+}
+
+.flexbox--mb20-t991 {
+    @media (max-width: 991px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 690px) {
+        margin-bottom: 69px;
     }
 }
 

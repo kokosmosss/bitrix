@@ -534,12 +534,18 @@ footer .footer__main-part .font_15 {
 
 .main-item-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px 10px;
+  grid-template-columns: 138px 226px;
+  column-gap: 40px;
+}
+@media (max-width: 580px) {
+  .main-item-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .main-item {
   width: auto;
+  margin-right: 0;
 }
 
 .company-item:first-child {
@@ -557,12 +563,12 @@ footer .footer__main-part .font_15 {
   padding-top: 120px;
   background-image: url("../img/hand-trash-vol.svg"), url("../img/hand-bike-vol.svg");
   background-repeat: no-repeat;
-  background-position: left top, calc(50% - 75px) 598px;
+  background-position: left top, calc(50% - 48px) 598px;
 }
-@media (max-width: 990px) {
+@media (max-width: 992px) {
   .index-block--padding-bottom-80 .company-item:first-child {
     background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
-    background-position: calc(50% - 286px) 1233px, right -80px top 47px;
+    background-position: calc(50% - 286px) 1203px, right -80px top 47px;
   }
 }
 @media (max-width: 690px) {
@@ -577,18 +583,34 @@ footer .footer__main-part .font_15 {
 }
 
 .company-item:first-child .company-item__picture--static {
-  margin-right: -100%;
+  margin-right: -200px;
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .company-item:first-child .company-item__picture--static {
     margin-right: -100px;
     margin-left: -100px;
   }
 }
+@media (max-width: 690px) {
+  .company-item:first-child .company-item__picture--static {
+    margin: 0;
+  }
+}
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   #main .company-item__picture-wrapper {
     padding-top: 96%;
+  }
+}
+
+@media (max-width: 991px) {
+  .flexbox--mb20-t991 {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 690px) {
+  .flexbox--mb20-t991 {
+    margin-bottom: 69px;
   }
 }
 
