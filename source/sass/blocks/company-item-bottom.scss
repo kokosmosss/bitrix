@@ -1,0 +1,37 @@
+.company-item:nth-child(2) {
+    background-color: #ffffff;
+    background-image:
+        url('../img/hand-guitar-char.svg'),
+        url('../img/hand-ball-char.svg');
+    background-repeat: no-repeat;
+    background-position:
+        calc(50% + 250px) top,
+        right bottom 60px;
+
+    @media (max-width: 990px) {
+        padding-bottom: 200px;
+        background-image:
+            url('../img/hand-guitar-char-mobile.svg'),
+            url('../img/hand-ball-char.svg');
+
+        background-position:
+            left top 300px,
+            right bottom 40px;
+
+    }
+
+    @media (max-width: 690px) {
+        background-image: none;
+        padding-bottom: 40px;
+    }
+}
+
+.index-block__btn-wrapper {
+    display: grid;
+    grid-template-columns: 196px 247px;
+    column-gap: 30px;
+
+    @media (max-width: 690px) {
+        grid-template-columns: 1fr;
+    }
+}
