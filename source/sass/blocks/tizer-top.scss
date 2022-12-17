@@ -68,6 +68,7 @@
 .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
     padding-top: 118px;
     padding-bottom: 85px;
+    overflow: hidden;
 
     @media (max-width: 992px) {
         padding-bottom: 348px;

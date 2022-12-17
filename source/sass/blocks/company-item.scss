@@ -1,8 +1,8 @@
 //блок волонтерство
-
 .company-item:nth-child(2) {
     background-color: #ffffff;
 }
+
 //заголовок
 .company-item__heading .index-block__title {
     font-size: 38px;
@@ -10,18 +10,19 @@
     color: #000000;
 
     @media (max-width: 743px) {
-    font-size: 32px;
-    line-height: 40px;
+        font-size: 32px;
+        line-height: 40px;
     }
 }
+
 //текст
 .company-item__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
     color: #000000;
 }
+
 //итоги-заголовок
 .company-item__text h4 {
     font-size: 20px;
@@ -34,22 +35,113 @@
     font-size: 20px;
     font-weight: 900;
     line-height: 25px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+//добавила одну обертку в разметку
+.main-item-container {
+    display: grid;
+    grid-template-columns: 138px 226px;
+    column-gap: 40px;
+
+    @media (max-width: 580px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.main-item {
+    width: auto;
+    margin-right: 0;
 }
 
 .company-item:first-child {
     border: none;
     background-color: #EAEDF1;
-    // background-image: url("../img/grey-bg-bottom.png");
-    // background-repeat: no-repeat;
-    // background-position: 100% 830px;
+    overflow: hidden;
 }
 
-// url("../img/bg-top.png"),
 .index-block--delimiter>div {
     border: none;
 }
 
+//руки
 .index-block--padding-bottom-80 .company-item:first-child {
-    padding-bottom: 237px;
-    padding-top: 171px;
+    padding-bottom: 97px;
+    padding-top: 120px;
+    background-image:
+        url('../img/hand-trash-vol.svg'),
+        url('../img/hand-bike-vol.svg');
+    background-repeat: no-repeat;
+    background-position:
+        left top,
+        calc(50% - 48px) 598px;
+
+    @media (max-width: 992px) {
+        background-image:
+            url('../img/hand-trash-vol-mobile.svg'),
+            url('../img/hand-bike-vol.svg');
+
+        background-position:
+            calc(50% - 286px) 1203px,
+            right -80px top 47px;
+    }
+
+    @media (max-width: 690px) {
+        background-image: none;
+    }
+}
+
+//большая картинка
+.company-item__picture--static {
+    max-height: 611px;
+    border-radius: 20px;
+}
+
+.company-item:first-child .company-item__picture--static {
+    margin-right: -200px;
+
+    @media (max-width: 992px) {
+        margin-right: -100px;
+        margin-left: -100px;
+    }
+
+    @media (max-width: 690px) {
+        margin: 0;
+    }
+}
+
+#main .company-item__picture-wrapper {
+    @media (max-width: 992px) {
+        padding-top: 96%;
+    }
+}
+
+.flexbox--mb20-t991 {
+    @media (max-width: 991px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 690px) {
+        margin-bottom: 69px;
+    }
+}
+
+.company-item__tizers {
+    margin-top: 0;
+}
+
+.index-block__preview {
+    margin-top: 48px;
+}
+
+//кнопка
+.index-block .index-block__btn--subscribe {
+    margin: 70px auto 0;
+    max-width: 300px;
+}
+
+.index-block .index-block__btn--subscribe .btn {
+    width: 100%;
+    margin: 0 auto;
 }

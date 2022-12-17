@@ -222,10 +222,22 @@ footer .footer__main-part .font_15 {
   line-height: 20px;
   text-align: center;
   padding: 15px 32px;
+  display: block;
 }
 
 .header__main-inner {
   padding-top: 24px;
+}
+
+.button-link {
+  font-family: "KFC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  border: none;
+  color: #E4002B;
 }
 
 .TIZERS .index-block h2 {
@@ -296,6 +308,7 @@ footer .footer__main-part .font_15 {
 .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
   padding-top: 118px;
   padding-bottom: 85px;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
@@ -502,7 +515,6 @@ footer .footer__main-part .font_15 {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   color: #000000;
 }
 
@@ -516,11 +528,30 @@ footer .footer__main-part .font_15 {
   font-size: 20px;
   font-weight: 900;
   line-height: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-item-container {
+  display: grid;
+  grid-template-columns: 138px 226px;
+  column-gap: 40px;
+}
+@media (max-width: 580px) {
+  .main-item-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.main-item {
+  width: auto;
+  margin-right: 0;
 }
 
 .company-item:first-child {
   border: none;
   background-color: #EAEDF1;
+  overflow: hidden;
 }
 
 .index-block--delimiter > div {
@@ -528,8 +559,77 @@ footer .footer__main-part .font_15 {
 }
 
 .index-block--padding-bottom-80 .company-item:first-child {
-  padding-bottom: 237px;
-  padding-top: 171px;
+  padding-bottom: 97px;
+  padding-top: 120px;
+  background-image: url("../img/hand-trash-vol.svg"), url("../img/hand-bike-vol.svg");
+  background-repeat: no-repeat;
+  background-position: left top, calc(50% - 48px) 598px;
+}
+@media (max-width: 992px) {
+  .index-block--padding-bottom-80 .company-item:first-child {
+    background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
+    background-position: calc(50% - 286px) 1203px, right -80px top 47px;
+  }
+}
+@media (max-width: 690px) {
+  .index-block--padding-bottom-80 .company-item:first-child {
+    background-image: none;
+  }
+}
+
+.company-item__picture--static {
+  max-height: 611px;
+  border-radius: 20px;
+}
+
+.company-item:first-child .company-item__picture--static {
+  margin-right: -200px;
+}
+@media (max-width: 992px) {
+  .company-item:first-child .company-item__picture--static {
+    margin-right: -100px;
+    margin-left: -100px;
+  }
+}
+@media (max-width: 690px) {
+  .company-item:first-child .company-item__picture--static {
+    margin: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  #main .company-item__picture-wrapper {
+    padding-top: 96%;
+  }
+}
+
+@media (max-width: 991px) {
+  .flexbox--mb20-t991 {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 690px) {
+  .flexbox--mb20-t991 {
+    margin-bottom: 69px;
+  }
+}
+
+.company-item__tizers {
+  margin-top: 0;
+}
+
+.index-block__preview {
+  margin-top: 48px;
+}
+
+.index-block .index-block__btn--subscribe {
+  margin: 70px auto 0;
+  max-width: 300px;
+}
+
+.index-block .index-block__btn--subscribe .btn {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .banners-img-with-text-list__item-title a {
