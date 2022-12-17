@@ -677,6 +677,7 @@ footer .footer__main-part .font_15 {
 
 .main-item-container {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 138px 226px;
   column-gap: 40px;
 }
@@ -684,17 +685,27 @@ footer .footer__main-part .font_15 {
   .main-item-container {
     grid-template-columns: 1fr 1fr;
   }
+=======
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 10px;
+>>>>>>> 28cca2c6c8116861cf2e206e9908ac8c0ff88ac5
 }
 
 .main-item {
   width: auto;
+<<<<<<< HEAD
   margin-right: 0;
+=======
+>>>>>>> 28cca2c6c8116861cf2e206e9908ac8c0ff88ac5
 }
 
 .company-item:first-child {
   border: none;
   background-color: #EAEDF1;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+>>>>>>> 28cca2c6c8116861cf2e206e9908ac8c0ff88ac5
 }
 
 .index-block--delimiter > div {
@@ -706,12 +717,21 @@ footer .footer__main-part .font_15 {
   padding-top: 120px;
   background-image: url("../img/hand-trash-vol.svg"), url("../img/hand-bike-vol.svg");
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-position: left top, calc(50% - 48px) 598px;
 }
 @media (max-width: 992px) {
   .index-block--padding-bottom-80 .company-item:first-child {
     background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
     background-position: calc(50% - 286px) 1203px, right -80px top 47px;
+=======
+  background-position: left top, calc(50% - 75px) 598px;
+}
+@media (max-width: 990px) {
+  .index-block--padding-bottom-80 .company-item:first-child {
+    background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
+    background-position: calc(50% - 286px) 1182px, right -80px top 47px;
+>>>>>>> 28cca2c6c8116861cf2e206e9908ac8c0ff88ac5
   }
 }
 @media (max-width: 690px) {
@@ -725,6 +745,7 @@ footer .footer__main-part .font_15 {
   border-radius: 20px;
 }
 
+<<<<<<< HEAD
 .company-item:first-child .company-item__picture--static {
   margin-right: -200px;
 }
@@ -741,11 +762,15 @@ footer .footer__main-part .font_15 {
 }
 
 @media (max-width: 992px) {
+=======
+@media (max-width: 991px) {
+>>>>>>> 28cca2c6c8116861cf2e206e9908ac8c0ff88ac5
   #main .company-item__picture-wrapper {
     padding-top: 96%;
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 991px) {
   .flexbox--mb20-t991 {
     margin-bottom: 80px;
@@ -757,6 +782,8 @@ footer .footer__main-part .font_15 {
   }
 }
 
+=======
+>>>>>>> 28cca2c6c8116861cf2e206e9908ac8c0ff88ac5
 .company-item__tizers {
   margin-top: 0;
 }
