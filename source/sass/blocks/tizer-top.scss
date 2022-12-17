@@ -32,7 +32,7 @@
         justify-content: center;
         margin: 0 auto;
 
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             gap: 22px;
             margin-right: -60px;
             margin-left: -60px;
@@ -70,7 +70,7 @@
     padding-bottom: 85px;
     overflow: hidden;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         padding-bottom: 348px;
     }
 
@@ -94,7 +94,7 @@
     left: calc(50% + 330px);
     bottom: calc(50% - 265px);
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         width: 392px;
         height: 484px;
         left: auto;

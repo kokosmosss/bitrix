@@ -54,7 +54,7 @@ body div.bx-yandex-map,
 body .maxwidth-theme:not(.pos-static) {
   max-width: 1110px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body .maxwidth-theme:not(.pos-static) {
     max-width: 584px;
   }
@@ -163,7 +163,7 @@ footer .footer__main-part .font_15 {
   font-size: 16px;
   line-height: 20px;
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .banners-big .banners-big__text-block {
     margin: 36px 0 95px;
   }
@@ -270,7 +270,7 @@ footer .footer__main-part .font_15 {
   justify-content: center;
   margin: 0 auto;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .tizers-list__items-wrapper.grid-list--items-3:not(#id) {
     gap: 22px;
     margin-right: -60px;
@@ -310,7 +310,7 @@ footer .footer__main-part .font_15 {
   padding-bottom: 85px;
   overflow: hidden;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
     padding-bottom: 348px;
   }
@@ -335,7 +335,7 @@ footer .footer__main-part .font_15 {
   left: calc(50% + 330px);
   bottom: calc(50% - 265px);
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .TIZERS .index-block::before {
     width: 392px;
     height: 484px;
@@ -391,7 +391,7 @@ footer .footer__main-part .font_15 {
   padding-top: 124px;
   padding-bottom: 162px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nature {
     padding-right: 80px;
     padding-left: 80px;
@@ -423,7 +423,7 @@ footer .footer__main-part .font_15 {
   margin-right: calc(50% + 80px);
   margin-bottom: 65px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nature h2 {
     margin-right: 80px;
   }
@@ -450,7 +450,7 @@ footer .footer__main-part .font_15 {
   gap: 56px;
   padding-right: 34px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .index-block--delimiter .tizers-list__items-wrapper.grid-list {
     grid-template-columns: 300px;
     gap: 50px;
@@ -501,7 +501,7 @@ footer .footer__main-part .font_15 {
   text-align: center;
   color: #000000;
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .banners-img-with-text-list__item-title a {
     font-size: 17.5px;
     line-height: 22px;
@@ -708,7 +708,7 @@ footer .footer__main-part .font_15 {
   background-repeat: no-repeat;
   background-position: left top, calc(50% - 48px) 598px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .index-block--padding-bottom-80 .company-item:first-child {
     background-image: url("../img/hand-trash-vol-mobile.svg"), url("../img/hand-bike-vol.svg");
     background-position: calc(50% - 286px) 1203px, right -80px top 47px;
@@ -728,7 +728,7 @@ footer .footer__main-part .font_15 {
 .company-item:first-child .company-item__picture--static {
   margin-right: -200px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .company-item:first-child .company-item__picture--static {
     margin-right: -100px;
     margin-left: -100px;
@@ -740,7 +740,7 @@ footer .footer__main-part .font_15 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #main .company-item__picture-wrapper {
     padding-top: 96%;
   }
@@ -781,7 +781,7 @@ footer .footer__main-part .font_15 {
   background-repeat: no-repeat;
   background-position: calc(50% + 250px) top, right bottom 60px;
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .company-item:nth-child(2) {
     padding-bottom: 200px;
     background-image: url("../img/hand-guitar-char-mobile.svg"), url("../img/hand-ball-char.svg");
