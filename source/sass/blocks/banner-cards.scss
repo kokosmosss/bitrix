@@ -1,5 +1,5 @@
 //карточки-наши достижения
-.banners-img-with-text-list__item-title a {
+.custom-cards .banners-img-with-text-list__item-title a {
     font-size: 26px;
     line-height: 33px;
     text-align: center;
@@ -17,7 +17,7 @@
     }
 }
 
-.banners-img-with-text-list__wrapper:nth-child(3) .banners-img-with-text-list__item-title a {
+.custom-cards .banners-img-with-text-list__wrapper:nth-child(3) .banners-img-with-text-list__item-title a {
     color: #FFFFFF;
 
     @media (max-width: 690px) {
@@ -25,18 +25,18 @@
     }
 }
 
-.banners-img-with-text-list__wrapper:nth-child(1) .banners-img-with-text-list__item-title a {
+.custom-cards .banners-img-with-text-list__wrapper:nth-child(1) .banners-img-with-text-list__item-title a {
     @media (max-width: 690px) {
         color: #FFFFFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
 
-.index-block .banners-img-with-text-list {
+.index-block .custom-cards {
     padding: 0;
 }
 
-.banners-img-with-text-list .grid-list--items-3 {
+.custom-cards .grid-list--items-3 {
     justify-items: center;
 
     @media (min-width: 744px) {
@@ -48,13 +48,13 @@
     }
 }
 
-.banners-img-with-text-list .grid-list__item {
+.custom-cards .grid-list__item {
     width: 100%;
     max-width: 335px;
     min-width: 225px;
 }
 
-.banners-img-with-text-list__item-image {
+.custom-cards .banners-img-with-text-list__item-image {
     @media (min-width: 747px) {
         min-height: 218px;
     }
@@ -64,7 +64,7 @@
     }
 }
 
-.banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
+.custom-cards .banners-img-with-text-list__item-image.banners-img-with-text-list__item-image--short {
     @media (max-width: 690px) {
         padding-top: 34%;
     }
@@ -74,49 +74,49 @@
     }
 }
 
-.banners-img-with-text-list .rounded-4 {
+.custom-cards .rounded-4 {
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 }
 
-.banners-img-with-text-list__wrapper .dark-block-after:after {
+.custom-cards .banners-img-with-text-list__wrapper .dark-block-after:after {
     background: none;
 }
 
-.banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
+.custom-cards .banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
     background-image: linear-gradient(to top, #FFFFFF 1.87%, rgba(255, 255, 255, 0) 98.61%);
 }
 
-.banners-img-with-text-list__wrapper .dark-block-after:after {
+.custom-cards .banners-img-with-text-list__wrapper .dark-block-after:after {
     @media (max-width: 690px) {
         top: 0;
         bottom: -30px;
     }
 }
 
-.banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
+.custom-cards .banners-img-with-text-list__wrapper:first-child .dark-block-after:after {
     @media (max-width: 690px) {
         background-image: linear-gradient(to top, #000000 1.87%, rgba(255, 255, 255, 0) 98.61%);
     }
 }
 
-.banners-img-with-text-list__wrapper:nth-child(2) .dark-block-after:after {
+.custom-cards .banners-img-with-text-list__wrapper:nth-child(2) .dark-block-after:after {
     @media (max-width: 690px) {
         background-image: linear-gradient(to top, #FFFFFF 1.87%, rgba(255, 255, 255, 0) 98.61%);
     }
 }
 
-.banners-img-with-text-list__wrapper:nth-child(3) .dark-block-after:after {
+.custom-cards .banners-img-with-text-list__wrapper:nth-child(3) .dark-block-after:after {
     @media (max-width: 690px) {
         background-image: linear-gradient(to top, #C5A56C 0.4%, rgba(197, 165, 108, 0) 100.17%);
     }
 }
 
-.banners-img-with-text-list__item-text {
+.custom-cards .banners-img-with-text-list__item-text {
     padding: 18px 16px 0;
 }
 
-.elements-count-3 .banners-img-with-text-list__item-text--absolute {
+.custom-cards .elements-count-3 .banners-img-with-text-list__item-text--absolute {
     bottom: 19px;
 
     @media (max-width: 690px) {
@@ -124,7 +124,7 @@
     }
 }
 
-.MIDDLE_ADV .mobile-scrolled.mobile-scrolled--items-2 {
+.MIDDLE_ADV .custom-cards .mobile-scrolled.mobile-scrolled--items-2 {
     @media (max-width: 690px) {
         grid-template-columns: 1fr;
 

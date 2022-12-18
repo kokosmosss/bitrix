@@ -20,13 +20,13 @@
 }
 
 //итоги-заголовок
-.company-item__text h4 {
+.custom-volunteering .company-item__text h4 {
     font-size: 20px;
     line-height: 25px;
 }
 
 //таблица итогов
-.company-item__text .main-item b {
+.custom-volunteering .company-item__text .main-item b {
     font-family: "KFC Condensed";
     font-size: 20px;
     font-weight: 900;
@@ -36,7 +36,7 @@
 }
 
 //добавила одну обертку в разметку
-.main-item-container {
+.custom-volunteering .main-item-container {
     display: grid;
     grid-template-columns: 138px 226px;
     column-gap: 40px;
@@ -46,12 +46,12 @@
     }
 }
 
-.main-item {
+.custom-volunteering .main-item {
     width: auto;
     margin-right: 0;
 }
 
-.company-item:first-child {
+.custom-volunteering {
     border: none;
     background-color: #EAEDF1;
     overflow: hidden;
@@ -62,7 +62,7 @@
 }
 
 //руки
-.index-block--padding-bottom-80 .company-item:first-child {
+ .custom-volunteering {
     padding-bottom: 97px;
     padding-top: 120px;
     background-image:

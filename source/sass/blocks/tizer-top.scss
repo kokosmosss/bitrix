@@ -1,6 +1,6 @@
 //блок наши достижения
 //красные числа
-.TIZERS .index-block h2 {
+.custom-achievements .index-block h2 {
     color: #000000;
     font-size: 60px;
     line-height: 75px;
@@ -24,7 +24,7 @@
 }
 
 //расположение
-.tizers-list__items-wrapper.grid-list--items-3 {
+.custom-achievements .tizers-list__items-wrapper.grid-list--items-3 {
     &:not(#id) {
         max-width: 720px;
         grid-template-columns: repeat(3, 220px);
@@ -45,7 +45,7 @@
     }
 }
 
-.TIZERS .tizers-list {
+.custom-achievements .tizers-list {
     padding-top: 80px;
     padding-bottom: 80px;
 
@@ -65,7 +65,7 @@
     line-height: 50px;
 }
 
-.TIZERS .index-block--padding-top-80.index-block--padding-bottom-80 {
+.custom-achievements .index-block--padding-top-80.index-block--padding-bottom-80 {
     padding-top: 118px;
     padding-bottom: 85px;
     overflow: hidden;
@@ -79,12 +79,12 @@
     }
 }
 
-.TIZERS .index-block {
+.custom-achievements .index-block {
     position: relative;
 }
 
 //мальчик
-.TIZERS .index-block::before {
+.custom-achievements .index-block::before {
     content: '';
     position: absolute;
     background-image: url('../img/boy.svg');
@@ -111,7 +111,7 @@
     }
 }
 
-.TIZERS .index-block::after {
+.custom-achievements .index-block::after {
     content: '';
     position: absolute;
     right: 0;
@@ -124,7 +124,7 @@
     background-image: url('../img/tear-boy.png')
 }
 
-.TIZERS .mobile-scrolled.mobile-scrolled--items-2 {
+.custom-achievements .mobile-scrolled.mobile-scrolled--items-2 {
     @media (max-width: 690px) {
         grid-template-columns: 1fr;
 
