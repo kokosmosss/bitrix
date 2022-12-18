@@ -1,5 +1,4 @@
 //блок с заботой о природе
-// Название файла оставляю старое, чисто чтобы видно было хорошо что меняется
 //заголовок
 .nature {
     &:not(#id) {
@@ -103,7 +102,7 @@
 }
 
 //расположение
-.index-block--delimiter .tizers-list__items-wrapper.grid-list {
+.nature .tizers-list__items-wrapper.grid-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 56px;
     padding-right: 34px;
@@ -117,7 +116,6 @@
     @media (max-width: 690px) {
         grid-template-columns: 1fr;
 
-        // вот это все убирает последствия скролла
         &:not(#id) {
             display: grid;
             gap: 35px;
