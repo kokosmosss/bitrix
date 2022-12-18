@@ -20,51 +20,48 @@
 Необходимо добавить класс `custom-banner` для стилизации промо-блока
 Было:
 ```html
-
- <div class="drag-block container BIG_BANNER_INDEX" data-class="big_banner_index_drag" data-order="1">
+<div class="drag-block container BIG_BANNER_INDEX" data-class="big_banner_index_drag" data-order="1">
   ...
-  </div>
+</div>
+```
 
 Станет:
 ```html
-
- <div class="drag-block container BIG_BANNER_INDEX custom-banner" data-class="big_banner_index_drag" data-order="1">
-   ...
-  </div>
+<div class="drag-block container BIG_BANNER_INDEX custom-banner" data-class="big_banner_index_drag" data-order="1">
+  ...
+</div>
 ```
 
 ### Добавить класс в блок с карточками под промо-блоком
-Необходимо добавить класс `curtom-cards` для стилизации карточек
+Необходимо добавить класс `custom-cards` для стилизации карточек
 Было:
 ```html
-
- <div class="banners-img-with-text-list banners-with-text-template">
+<div class="banners-img-with-text-list banners-with-text-template">
   ...
-  </div>
+</div>
+```
 
 Станет:
 ```html
-
- <div class="banners-img-with-text-list banners-with-text-template curtom-cards">
-   ...
-  </div>
+<div class="banners-img-with-text-list banners-with-text-template custom-cards">
+  ...
+</div>
 ```
 
 ### Добавить класс в блок "Наши достижения"
-Необходимо добавить класс `curtom-achievements` для стилизации блока "Наши достижения"
+Необходимо добавить класс `custom-achievements` для стилизации блока "Наши достижения"
 Было:
 ```html
-
- <div class="drag-block container TIZERS " data-class="tizers_drag" data-order="5">
+<div class="drag-block container TIZERS " data-class="tizers_drag" data-order="5">
   ...
-  </div>
+</div>
+```
 
 Станет:
 ```html
-
- <div class="drag-block container TIZERS custom-achievements" data-class="tizers_drag" data-order="5">
-   ...
-  </div>
+<div class="drag-block container TIZERS custom-achievements" data-class="tizers_drag" data-order="5">
+  ...
+</div>
 ```
 
 ### Добавить классы и теги в блок "С заботой о природе"
@@ -92,20 +89,19 @@
 ```
 
 ### Добавить классы и теги в блок "Волонтерство"
-Необходимо добавить класс `curtom-volunteering` для стилизации блока
+Необходимо добавить класс `custom-volunteering` для стилизации блока
 Было:
 ```html
-
- <div class="company-item front_company-template">
+<div class="company-item front_company-template">
   ...
-  </div>
+</div>
+```
 
 Станет:
 ```html
-
-  <div class="company-item front_company-template custom-volunteering">
-   ...
-  </div>
+<div class="company-item front_company-template custom-volunteering">
+  ...
+</div>
 ```
 
 Необходимо для списка с итогами добавить общую обертку и удалить лишние переносы строк (один `<br>` в конце и по одному в каждом из 4-х пунктов).  
@@ -176,20 +172,19 @@
 ```
 
 ### Добавить классы в блок "Благотворительность"
-Необходимо добавить класс `curtom-charity` для стилизации блока
+Необходимо добавить класс `custom-charity` для стилизации блока
 Было:
 ```html
-
- <div class="company-item front_company-template">
+<div class="company-item front_company-template">
   ...
-  </div>
+</div>
+```
 
 Станет:
 ```html
-
-  <div class="company-item front_company-template custom-charity">
-   ...
-  </div>
+<div class="company-item front_company-template custom-charity">
+  ...
+</div>
 ```
 
 В параграфе необходимо выделить тегом `<b>` часть текста.  
