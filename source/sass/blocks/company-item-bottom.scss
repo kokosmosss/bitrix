@@ -1,37 +1,71 @@
 .custom-charity {
+    &:not(#id) {
+      padding-top: 150px;
+    }
+
     background-color: #ffffff;
     background-image:
+        url('../img/tear-charity.svg'),
         url('../img/hand-guitar-char.svg'),
         url('../img/hand-ball-char.svg');
-    background-repeat: no-repeat;
+    background-repeat:
+        repeat-x,
+        no-repeat,
+        no-repeat;
     background-position:
+        50% 0,
         calc(50% + 250px) top,
         right bottom 60px;
 
     @media (max-width: 991px) {
         padding-bottom: 200px;
         background-image:
+            url('../img/tear-charity.svg'),
             url('../img/hand-guitar-char-mobile.svg'),
             url('../img/hand-ball-char.svg');
 
         background-position:
+            50% 0,
             left top 300px,
             right bottom 40px;
 
     }
 
     @media (max-width: 690px) {
-        background-image: none;
+        background-image: url('../img/tear-charity.svg');
         padding-bottom: 40px;
     }
 }
 
-.index-block__btn-wrapper {
-    display: grid;
-    grid-template-columns: 196px 247px;
-    column-gap: 30px;
+.custom-charity .company-item__picture--static {
+    background-image: url('../img/charity.png') !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 
-    @media (max-width: 690px) {
-        grid-template-columns: 1fr;
+    @media (min-width: 992px) {
+        height: 452px;
+    }
+}
+
+#main .custom-charity .company-item__heading--LEFT {
+    @media (min-width: 992px) {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% + 70px);
+        width: calc(50% + 70px);
+    }
+}
+
+#main .custom-charity .company-item__heading--LEFT > .sticky-block.flexbox--mb20-t991 {
+    @media (min-width: 992px) {
+        padding-left: 80px;
+    }
+}
+
+.custom-charity .index-block__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    > .index-block__btn:not(:last-child) {
+        margin-right: 42px;
     }
 }
