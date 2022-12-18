@@ -1,0 +1,18 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.popup-window,
+body div.bx-yandex-map,
+.fancybox-title {
+    font-family: '/include/fonts/css2.css', sans-serif;
+}
