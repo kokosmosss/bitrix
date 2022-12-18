@@ -54,7 +54,7 @@ body div.bx-yandex-map,
 body .maxwidth-theme:not(.pos-static) {
   max-width: 1110px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body .maxwidth-theme:not(.pos-static) {
     max-width: 584px;
   }
@@ -804,5 +804,14 @@ footer .footer__main-part .font_15 {
   .index-block__btn-wrapper {
     grid-template-columns: 1fr;
   }
+}
+
+.news .topic__heading #pagetitle {
+  font-size: 46px;
+  line-height: 58px;
+}
+
+.news .items-list-inner__item *:not(#id) {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

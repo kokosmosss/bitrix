@@ -1,0 +1,10 @@
+.news .topic__heading #pagetitle {
+    font-size: 46px;
+    line-height: 58px;
+}
+
+.news .items-list-inner__item * {
+    &:not(#id) {
+        color: #000000;
+    }
+}
