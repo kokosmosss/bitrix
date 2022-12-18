@@ -73,7 +73,7 @@
         left top,
         calc(50% - 48px) 598px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         background-image:
             url('../img/hand-trash-vol-mobile.svg'),
             url('../img/hand-bike-vol.svg');
@@ -97,7 +97,7 @@
 .company-item:first-child .company-item__picture--static {
     margin-right: -200px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         margin-right: -100px;
         margin-left: -100px;
     }
@@ -108,7 +108,7 @@
 }
 
 #main .company-item__picture-wrapper {
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         padding-top: 96%;
     }
 }
