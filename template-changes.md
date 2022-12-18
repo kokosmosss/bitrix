@@ -66,7 +66,7 @@
 
 ### Добавить классы и теги в блок "С заботой о природе"
 Нужно переместить заголовок "С заботой о природе" внутрь центровщика следующего за ним блока.  
-Так же нужно добавить класс `nature` на общую обертку.
+Так же нужно добавить класс `custom-nature` на общую обертку.
 
 Было:
 ```html
@@ -80,11 +80,21 @@
 
 Станет:
 ```html
-<div class="tizers-list tizers-list--narrow nature">
+<div class="tizers-list tizers-list--narrow custom-nature">
   <div class="maxwidth-theme">
     <h2>C заботой о природе</h2>
     ...
   </div>
+</div>
+```
+
+Добавить кнопку в конец блока `<div class="maxwidth-theme">`
+
+```html
+<div class="index-block__btn">
+  <a href="/#" class="button-link button-link--white">
+    Узнай больше об эко-привычках с KFC
+  </a>
 </div>
 ```
 
