@@ -1,5 +1,5 @@
 //красный заголовок
-.banners-big__text--wide .banners-big__title {
+.custom-banner .banners-big__text--wide .banners-big__title {
     color: var(--theme-base-color);
     font-size: 135px;
     line-height: 170px;
@@ -26,7 +26,7 @@
 }
 
 //с кфс и ростикс
-.banners-big .banners-big__top-text {
+.custom-banner .banners-big__top-text {
     display: block;
     color: #000000;
     font-size: 47px;
@@ -41,31 +41,31 @@
 }
 
 //маленький текст
-.banners-big .banners-big__text-block {
+.custom-banner .banners-big__text-block {
     color: #000000;
     font-weight: 400;
     opacity: 1;
     font-size: 16px;
     line-height: 20px;
 
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
         margin: 36px 0 95px;
     }
 }
 
-.banners-big--adaptive-1 .banners-big__text-block {
+.custom-banner .banners-big--adaptive-1 .banners-big__text-block {
     display: block;
 }
 
 //ограничение для больших экранов маленького текста по ширине
-.banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
+.custom-banner .banners-big__text--wide.banners-big__text--center .banners-big__text-wrapper {
     @media (min-width: 744px) {
         width: 614px;
     }
 }
 
 //руки
-.banners-big__wrapper {
+.custom-banner .banners-big__wrapper {
     background-image:
         url("../img/hand-left.svg"),
         url("../img/hand-right.svg"),
@@ -93,14 +93,14 @@
     }
 }
 
-.swiper-container {
+.custom-banner .swiper-container {
     z-index: 0;
 }
 
-.banners-big .maxwidth-banner {
+.custom-banner .maxwidth-banner {
     margin-top: 20px;
 }
 
-.banners-big--normal .banners-big__depend-height {
+.custom-banner .banners-big--normal .banners-big__depend-height {
     height: 580px;
 }

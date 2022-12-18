@@ -1,7 +1,6 @@
 //блок с заботой о природе
-// Название файла оставляю старое, чисто чтобы видно было хорошо что меняется
 //заголовок
-.nature {
+.custom-nature {
     &:not(#id) {
         padding-top: 124px;
         padding-bottom: 162px;
@@ -27,7 +26,7 @@
         url('../img/basket.png'),
         url('../img/kiwihug.png');
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         padding-right: 80px;
         padding-left: 80px;
 
@@ -73,7 +72,7 @@
     }
 }
 
-.nature h2 {
+.custom-nature h2 {
     font-size: 38px;
     font-weight: 900;
     line-height: 48px;
@@ -81,7 +80,7 @@
     margin-right: calc(50% + 80px);
     margin-bottom: 65px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         margin-right: 80px;
     }
 
@@ -103,12 +102,12 @@
 }
 
 //расположение
-.index-block--delimiter .tizers-list__items-wrapper.grid-list {
+.custom-nature .tizers-list__items-wrapper.grid-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 56px;
     padding-right: 34px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         grid-template-columns: 300px;
         gap: 50px;
         padding-right: 0;
@@ -117,7 +116,6 @@
     @media (max-width: 690px) {
         grid-template-columns: 1fr;
 
-        // вот это все убирает последствия скролла
         &:not(#id) {
             display: grid;
             gap: 35px;
@@ -134,7 +132,7 @@
 }
 
 //иконки
-.nature .tizers-list__item-text-wrapper::before {
+.custom-nature .tizers-list__item-text-wrapper::before {
     content:"";
     width: 60px;
     height: 62px;
@@ -143,14 +141,14 @@
     margin-bottom: 25px;
 }
 
-.nature .tizers-list__item-wrapper:first-child .tizers-list__item-text-wrapper::before {
+.custom-nature .tizers-list__item-wrapper:first-child .tizers-list__item-text-wrapper::before {
     background-image: url("../img/icon1.svg");
 }
 
-.nature .tizers-list__item-wrapper:nth-child(2) .tizers-list__item-text-wrapper::before {
+.custom-nature .tizers-list__item-wrapper:nth-child(2) .tizers-list__item-text-wrapper::before {
     background-image: url("../img/icon2.svg");
 }
 
-.nature .tizers-list__item-wrapper:nth-child(3) .tizers-list__item-text-wrapper::before {
+.custom-nature .tizers-list__item-wrapper:nth-child(3) .tizers-list__item-text-wrapper::before {
     background-image: url("../img/icon3.svg");
 }

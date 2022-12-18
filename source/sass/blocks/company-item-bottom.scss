@@ -1,4 +1,4 @@
-.company-item:nth-child(2) {
+.custom-charity {
     background-color: #ffffff;
     background-image:
         url('../img/hand-guitar-char.svg'),
@@ -8,7 +8,7 @@
         calc(50% + 250px) top,
         right bottom 60px;
 
-    @media (max-width: 990px) {
+    @media (max-width: 991px) {
         padding-bottom: 200px;
         background-image:
             url('../img/hand-guitar-char-mobile.svg'),
