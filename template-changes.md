@@ -15,6 +15,58 @@
 Если это невозможно, то можно воспользоваться [полностью прозрачным изображением](./source/img/transparent.png).
 
 ## Классы и теги для стилизации специфических блоков
+
+### Добавить класс в промо-блок "Выбирай добро"
+Необходимо добавить класс `custom-banner` для стилизации промо-блока
+Было:
+```html
+
+ <div class="drag-block container BIG_BANNER_INDEX" data-class="big_banner_index_drag" data-order="1">
+  ...
+  </div>
+
+Станет:
+```html
+
+ <div class="drag-block container BIG_BANNER_INDEX custom-banner" data-class="big_banner_index_drag" data-order="1">
+   ...
+  </div>
+```
+
+### Добавить класс в блок с карточками под промо-блоком
+Необходимо добавить класс `curtom-cards` для стилизации карточек
+Было:
+```html
+
+ <div class="banners-img-with-text-list banners-with-text-template">
+  ...
+  </div>
+
+Станет:
+```html
+
+ <div class="banners-img-with-text-list banners-with-text-template curtom-cards">
+   ...
+  </div>
+```
+
+### Добавить класс в блок "Наши достижения"
+Необходимо добавить класс `curtom-achievements` для стилизации блока "Наши достижения"
+Было:
+```html
+
+ <div class="drag-block container TIZERS " data-class="tizers_drag" data-order="5">
+  ...
+  </div>
+
+Станет:
+```html
+
+ <div class="drag-block container TIZERS custom-achievements" data-class="tizers_drag" data-order="5">
+   ...
+  </div>
+```
+
 ### Добавить классы и теги в блок "С заботой о природе"
 Нужно переместить заголовок "С заботой о природе" внутрь центровщика следующего за ним блока.  
 Так же нужно добавить класс `nature` на общую обертку.
@@ -40,6 +92,22 @@
 ```
 
 ### Добавить классы и теги в блок "Волонтерство"
+Необходимо добавить класс `curtom-volunteering` для стилизации блока
+Было:
+```html
+
+ <div class="company-item front_company-template">
+  ...
+  </div>
+
+Станет:
+```html
+
+  <div class="company-item front_company-template custom-volunteering">
+   ...
+  </div>
+```
+
 Необходимо для списка с итогами добавить общую обертку и удалить лишние переносы строк (один `<br>` в конце и по одному в каждом из 4-х пунктов).  
 Было:
 ```html
@@ -108,6 +176,22 @@
 ```
 
 ### Добавить классы в блок "Благотворительность"
+Необходимо добавить класс `curtom-charity` для стилизации блока
+Было:
+```html
+
+ <div class="company-item front_company-template">
+  ...
+  </div>
+
+Станет:
+```html
+
+  <div class="company-item front_company-template custom-charity">
+   ...
+  </div>
+```
+
 В параграфе необходимо выделить тегом `<b>` часть текста.  
 Было:
 ```html
