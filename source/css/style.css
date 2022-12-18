@@ -241,6 +241,10 @@ footer .footer__main-part .font_15 {
   color: #E4002B;
 }
 
+.button-link--white {
+  color: #FFFFFF;
+}
+
 .custom-achievements .index-block h2 {
   color: #000000;
   font-size: 60px;
@@ -437,7 +441,7 @@ footer .footer__main-part .font_15 {
   }
 }
 
-.tizers-list__item-name.switcher-title {
+.custom-nature .tizers-list__item-name.switcher-title {
   font-family: "KFC Condensed";
   font-size: 24px;
   font-weight: 900;
@@ -782,6 +786,9 @@ footer .footer__main-part .font_15 {
   background-repeat: repeat-x, no-repeat, no-repeat;
   background-position: 50% 0, calc(50% + 250px) top, right bottom 60px;
 }
+.custom-charity:not(#id) {
+  padding-top: 150px;
+}
 @media (max-width: 991px) {
   .custom-charity {
     padding-bottom: 200px;
@@ -791,23 +798,23 @@ footer .footer__main-part .font_15 {
 }
 @media (max-width: 690px) {
   .custom-charity {
-    background-image: none;
+    background-image: url("../img/tear-charity.svg");
     padding-bottom: 40px;
   }
 }
 
-.company-item:nth-child(2) .company-item__picture--static {
+.custom-charity .company-item__picture--static {
   background-image: url("../img/charity.png") !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 }
 @media (min-width: 992px) {
-  .company-item:nth-child(2) .company-item__picture--static {
+  .custom-charity .company-item__picture--static {
     height: 452px;
   }
 }
 
 @media (min-width: 992px) {
-  #main .company-item__heading--LEFT {
+  #main .custom-charity .company-item__heading--LEFT {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: calc(50% + 70px);
@@ -816,16 +823,16 @@ footer .footer__main-part .font_15 {
 }
 
 @media (min-width: 992px) {
-  #main .company-item__heading--LEFT > .sticky-block.flexbox--mb20-t991 {
+  #main .custom-charity .company-item__heading--LEFT > .sticky-block.flexbox--mb20-t991 {
     padding-left: 80px;
   }
 }
 
-.index-block__btn-wrapper {
+.custom-charity .index-block__btn-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-.index-block__btn-wrapper > .index-block__btn:not(:last-child) {
+.custom-charity .index-block__btn-wrapper > .index-block__btn:not(:last-child) {
   margin-right: 42px;
 }
 /*# sourceMappingURL=style.css.map */

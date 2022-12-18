@@ -1,5 +1,7 @@
 .custom-charity {
-    padding-top: 150px;
+    &:not(#id) {
+      padding-top: 150px;
+    }
 
     background-color: #ffffff;
     background-image:
@@ -35,7 +37,7 @@
     }
 }
 
-.company-item:nth-child(2) .company-item__picture--static {
+.custom-charity .company-item__picture--static {
     background-image: url('../img/charity.png') !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
 
@@ -44,7 +46,7 @@
     }
 }
 
-#main .company-item__heading--LEFT {
+#main .custom-charity .company-item__heading--LEFT {
     @media (min-width: 992px) {
         flex-grow: 0;
         flex-shrink: 0;
@@ -53,13 +55,13 @@
     }
 }
 
-#main .company-item__heading--LEFT > .sticky-block.flexbox--mb20-t991 {
+#main .custom-charity .company-item__heading--LEFT > .sticky-block.flexbox--mb20-t991 {
     @media (min-width: 992px) {
         padding-left: 80px;
     }
 }
 
-.index-block__btn-wrapper {
+.custom-charity .index-block__btn-wrapper {
     display: flex;
     flex-wrap: wrap;
 
