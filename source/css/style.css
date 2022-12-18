@@ -805,4 +805,85 @@ footer .footer__main-part .font_15 {
     grid-template-columns: 1fr;
   }
 }
+
+.news {
+  background-image: url("../img/hand-trash-news.svg"), url("../img/hand-bike-news.svg");
+  background-repeat: no-repeat;
+  background-position: top 529px right -20px, top 1017px left;
+}
+@media (max-width: 991px) {
+  .news {
+    background-position: top 529px right -20px, bottom left;
+  }
+}
+@media (max-width: 690px) {
+  .news {
+    background-image: none;
+  }
+}
+.news .topic__heading #pagetitle {
+  font-size: 46px;
+  line-height: 58px;
+}
+.news .items-list-inner__item *:not(#id) {
+  color: #000000;
+}
+.news .head-block {
+  padding: 0;
+}
+.news .items-list-inner__item-period.font_13 {
+  font-size: 14px;
+  line-height: 17.6px;
+}
+.news .items-list-inner__item-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+}
+.news .items-list-inner__item-preview {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media (max-width: 991px) {
+  .news .items-list-inner__item-preview {
+    margin-bottom: 50px;
+  }
+}
+.news .bordered {
+  border: none;
+}
+.news .items-list-inner__item--big-padding {
+  padding: 29px 0 35px;
+}
+.news .items-list-inner__item--big-padding:not(#id) {
+  padding: 40px 0;
+}
+.news .items-list-inner__item {
+  background: none;
+}
+@media (max-width: 991px) {
+  .news .items-list-inner__item-image-wrapper {
+    order: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .news .flexbox--column-t767 {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .news .flexbox--direction-row-reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 991px) {
+  .news .items-list-inner__item-link:not(#id) {
+    margin: 0;
+    width: 100%;
+    min-height: 328px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

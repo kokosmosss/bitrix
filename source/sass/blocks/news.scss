@@ -1,0 +1,110 @@
+.news {
+    background-image:
+        url('../img/hand-trash-news.svg'),
+        url('../img/hand-bike-news.svg');
+    background-repeat: no-repeat;
+    background-position:
+        top 529px right -20px,
+        top 1017px left;
+
+    @media (max-width: 991px) {
+        background-position:
+            top 529px right -20px,
+            bottom left;
+    }
+
+    @media (max-width: 690px) {
+        background-image: none;
+    }
+
+    //заголовок
+    .topic__heading #pagetitle {
+        font-size: 46px;
+        line-height: 58px;
+    }
+
+    //цвет текста
+    .items-list-inner__item * {
+        &:not(#id) {
+            color: #000000;
+        }
+    }
+
+    .head-block {
+        padding: 0;
+    }
+
+    //дата
+    .items-list-inner__item-period.font_13 {
+        font-size: 14px;
+        line-height: 17.6px;
+    }
+
+    //заголовок карточки
+    .items-list-inner__item-title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 30px;
+    }
+
+    //текст карточки
+    .items-list-inner__item-preview {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .bordered {
+        border: none;
+    }
+
+
+    .items-list-inner__item--big-padding {
+        padding: 29px 0 35px;
+
+        &:not(#id) {
+            padding: 40px 0;
+        }
+
+    }
+
+    .items-list-inner__item {
+        background: none;
+    }
+
+    //положение картинки
+    .items-list-inner__item-image-wrapper {
+        @media (max-width: 991px) {
+            order: 1;
+            width: 100%;
+        }
+    }
+
+    // сетка
+    .flexbox--column-t767 {
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+    }
+
+    .flexbox--direction-row-reverse {
+        @media (min-width: 992px) {
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .items-list-inner__item-link {
+        &:not(#id) {
+            @media (max-width: 991px) {
+                margin: 0;
+                width: 100%;
+                min-height: 328px;
+            }
+        }
+    }
+}
