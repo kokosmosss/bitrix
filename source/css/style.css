@@ -29,9 +29,9 @@
 .body {
   min-width: 375px;
   background-color: #F6F8FB;
+  font-family: "KFC", Arial, sans-serif;
 }
 
-body,
 h1,
 h2,
 h3,
@@ -47,8 +47,8 @@ h6,
 .popup-window,
 body div.bx-yandex-map,
 .fancybox-title {
-  font-family: "KFC", Arial, sans-serif;
   color: #000000;
+  font-family: "KFC", Arial, sans-serif;
   font-weight: 900;
 }
 
@@ -146,6 +146,7 @@ footer .footer__main-part .font_15 {
   display: block;
   color: #000000;
   font-size: 47px;
+  font-weight: 900;
   line-height: 59px;
   letter-spacing: -0.02em;
   opacity: 1;
@@ -389,7 +390,7 @@ footer .footer__main-part .font_15 {
 .custom-nature {
   background-color: #C39E67;
   background-repeat: repeat-x, repeat-x, no-repeat, no-repeat, repeat;
-  background-position: 50% 0, 50% 100%, 50% 0, calc(50% + 656px) -84px, 50% 50%;
+  background-position: 50% -1px, 50% 100%, 50% 0, calc(50% + 656px) -84px, 50% 50%;
   background-image: url("../img/tear-top.svg"), url("../img/tear-bottom.png"), url("../img/trash.svg"), url("../img/basket.png"), url("../img/kiwihug.png");
 }
 .custom-nature:not(#id) {
@@ -771,7 +772,7 @@ footer .footer__main-part .font_15 {
 }
 
 .custom-volunteering .index-block__btn--subscribe {
-  margin: 70px auto 0 !important;
+  margin: 60px auto 50px !important;
 }
 
 .custom-volunteering .index-block__btn--subscribe .btn {
@@ -852,5 +853,21 @@ footer .footer__main-part .font_15 {
 }
 .custom-charity .company-item--IMG_SIDE + div .btn:hover {
   background-color: hsl(var(--theme-base-color-hue), var(--theme-base-color-saturation), calc(var(--theme-base-color-lightness) + var(--theme-lightness-hover-diff)));
+}
+
+.breadcrumbs {
+  font-weight: 400;
+}
+
+.head-block__item {
+  font-weight: 400;
+}
+
+.items-list-inner__item-period-date {
+  font-weight: 400;
+}
+
+.items-list-inner__item-preview {
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
