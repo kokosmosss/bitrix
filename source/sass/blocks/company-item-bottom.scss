@@ -69,3 +69,18 @@
         margin-right: 42px;
     }
 }
+
+.custom-charity .company-item--IMG_SIDE + div {
+    margin: 36px auto 0 !important;
+}
+
+.custom-charity .company-item--IMG_SIDE + div .btn {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: var(--theme-base-color);
+
+    &:hover {
+        background-color: hsl(var(--theme-base-color-hue), var(--theme-base-color-saturation), calc(var(--theme-base-color-lightness) + var(--theme-lightness-hover-diff)));
+    }
+}

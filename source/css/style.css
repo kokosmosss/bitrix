@@ -711,7 +711,7 @@ footer .footer__main-part .font_15 {
   padding-top: 120px;
   background-image: url("../img/hand-trash-vol.svg"), url("../img/hand-bike-vol.svg");
   background-repeat: no-repeat;
-  background-position: left top, calc(50% - 48px) 598px;
+  background-position: left top, left calc(50% - 48px) bottom 120px;
 }
 @media (max-width: 991px) {
   .custom-volunteering {
@@ -770,14 +770,18 @@ footer .footer__main-part .font_15 {
   margin-top: 48px;
 }
 
-.index-block .index-block__btn--subscribe {
-  margin: 70px auto 0;
-  max-width: 300px;
+.custom-volunteering .index-block__btn--subscribe {
+  margin: 70px auto 0 !important;
 }
 
-.index-block .index-block__btn--subscribe .btn {
+.custom-volunteering .index-block__btn--subscribe .btn {
   width: 100%;
   margin: 0 auto;
+  color: #fff;
+  background-color: var(--theme-base-color);
+}
+.custom-volunteering .index-block__btn--subscribe .btn:hover {
+  background-color: hsl(var(--theme-base-color-hue), var(--theme-base-color-saturation), calc(var(--theme-base-color-lightness) + var(--theme-lightness-hover-diff)));
 }
 
 .custom-charity {
@@ -834,5 +838,19 @@ footer .footer__main-part .font_15 {
 }
 .custom-charity .index-block__btn-wrapper > .index-block__btn:not(:last-child) {
   margin-right: 42px;
+}
+
+.custom-charity .company-item--IMG_SIDE + div {
+  margin: 36px auto 0 !important;
+}
+
+.custom-charity .company-item--IMG_SIDE + div .btn {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: var(--theme-base-color);
+}
+.custom-charity .company-item--IMG_SIDE + div .btn:hover {
+  background-color: hsl(var(--theme-base-color-hue), var(--theme-base-color-saturation), calc(var(--theme-base-color-lightness) + var(--theme-lightness-hover-diff)));
 }
 /*# sourceMappingURL=style.css.map */
