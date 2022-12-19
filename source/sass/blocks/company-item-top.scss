@@ -71,7 +71,7 @@
     background-repeat: no-repeat;
     background-position:
         left top,
-        calc(50% - 48px) 598px;
+        left calc(50% - 48px) bottom 120px;
 
     @media (max-width: 991px) {
         background-image:
@@ -132,12 +132,17 @@
 }
 
 //кнопка
-.index-block .index-block__btn--subscribe {
-    margin: 70px auto 0;
-    max-width: 300px;
+.custom-volunteering .index-block__btn--subscribe {
+    margin: 70px auto 0 !important;
 }
 
-.index-block .index-block__btn--subscribe .btn {
+.custom-volunteering .index-block__btn--subscribe .btn {
     width: 100%;
     margin: 0 auto;
+    color: #fff;
+    background-color: var(--theme-base-color);
+
+    &:hover {
+        background-color: hsl(var(--theme-base-color-hue), var(--theme-base-color-saturation), calc(var(--theme-base-color-lightness) + var(--theme-lightness-hover-diff)));
+    }
 }
