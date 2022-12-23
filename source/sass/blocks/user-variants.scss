@@ -1,0 +1,39 @@
+.user-variants {
+  padding: 54px 35px 104px;
+  text-align: center;
+
+  > span {
+    display: block;
+    margin: 0 96px;
+    font-weight: 400;
+  }
+
+  .index-block__btn {
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding-right: 16px;
+    padding-left: 16px;
+    color: #fff;
+    background-color: var(--theme-base-color);
+
+    &:hover {
+      background-color: hsl(var(--theme-base-color-hue), var(--theme-base-color-saturation), calc(var(--theme-base-color-lightness) + var(--theme-lightness-hover-diff)));
+    }
+  }
+
+  > div > a {
+    margin: 0 !important;
+    flex-grow: 1;
+    width: 0;
+  }
+
+  > div > a + a {
+    margin-left: 10px !important;
+  }
+}
+
+.jqmWindow {
+  max-width: 620px;
+}
